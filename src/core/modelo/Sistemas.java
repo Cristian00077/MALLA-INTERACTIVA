@@ -1,7 +1,6 @@
 
 package core.modelo;
 import core.persistencia.*;
-import javax.swing.JButton;
 public class Sistemas extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Sistemas.class.getName());
@@ -12,7 +11,7 @@ public class Sistemas extends javax.swing.JFrame {
         definirAristas();
         inicializarEstados();
         conectarListeners();
-        refrescarUI();
+        actualizarInterfaz();
     }
     
     private Grafo grafo = new Grafo();
@@ -141,7 +140,7 @@ public class Sistemas extends javax.swing.JFrame {
     }
     
     private void onClickNodo(Nodo n) {
-    String id = n.getMateria();
+    
     if (n.getEstado() != Estado.DISPONIBLE) {
         java.awt.Toolkit.getDefaultToolkit().beep();
         return;
@@ -155,10 +154,8 @@ public class Sistemas extends javax.swing.JFrame {
             s.setEstado(Estado.DISPONIBLE);
         }
     }
-    refrescarUI();
+    actualizarInterfaz();
     }
-    
-    
     
     private boolean todosPreAprobados(Nodo n) {
         for (String pre : n.getPrereqs()) {
@@ -167,12 +164,12 @@ public class Sistemas extends javax.swing.JFrame {
         }
         return true;
     }
-    private void refrescarUI() {
+    private void actualizarInterfaz() {
         for (Nodo n : grafo.getNodos().values()) {
             switch (n.getEstado()) {
                 case BLOQUEADA -> {
-                    n.getBoton().setEnabled(false);
-                    n.getBoton().setBackground(new java.awt.Color(220,220,220));
+                    n.getBoton().setEnabled(true);
+                    n.getBoton().setBackground(new java.awt.Color(200,220,220));
                     n.getBoton().setForeground(java.awt.Color.DARK_GRAY);
                 }
                 case DISPONIBLE -> {

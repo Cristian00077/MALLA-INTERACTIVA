@@ -1,10 +1,11 @@
 package core.persistencia;
 import java.util.*;
+import javax.swing.JButton;
 
 public class Grafo {
     private final Map<String, Nodo> nodos = new HashMap<>();
     
-    public Nodo registrar(String id, javax.swing.JButton boton) {
+    public Nodo registrar(String id, JButton boton) {
         Nodo n = new Nodo(id, boton);
         nodos.put(id, n);
         return n;
