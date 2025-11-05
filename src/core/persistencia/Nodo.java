@@ -9,11 +9,13 @@ public class Nodo {
     private JButton boton;             
     private Set<String> prereqs = new HashSet<>();
     private Set<String> sucesoras = new HashSet<>();
+    private int creditos;
     private Estado estado = Estado.BLOQUEADA;
 
-    public Nodo(String materia, JButton boton) {
+    public Nodo(String materia, JButton boton, int creditos) {
         this.materia = materia;
         this.boton = boton;
+        this.creditos = creditos;
     }
 
     public JButton getBoton() {
@@ -54,6 +56,10 @@ public class Nodo {
 
     public void setEstado(Estado estado) {
         this.estado = estado;
+    }
+
+    public int getCreditos() {
+        return creditos;
     }
    
 }

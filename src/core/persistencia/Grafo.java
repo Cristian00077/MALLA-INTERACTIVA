@@ -5,8 +5,8 @@ import javax.swing.JButton;
 public class Grafo {
     private final Map<String, Nodo> nodos = new HashMap<>();
     
-    public Nodo registrar(String id, JButton boton) {
-        Nodo n = new Nodo(id, boton);
+    public Nodo registrar(String id, JButton boton, int creditos) {
+        Nodo n = new Nodo(id, boton, creditos);
         nodos.put(id, n);
         return n;
     }
