@@ -1,9 +1,10 @@
-
 package core.modelo;
+
 import core.persistencia.*;
 import javax.swing.JOptionPane;
+
 public class Sistemas extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Sistemas.class.getName());
 
     public Sistemas() {
@@ -14,76 +15,76 @@ public class Sistemas extends javax.swing.JFrame {
         conectarListeners();
         actualizarInterfaz();
     }
-    
+
     private Grafo grafo = new Grafo();
-    
-    private void armarGrafo(){
-        grafo.registrar("Algebra lineal", algebra, 3);    
-        grafo.registrar("Calculo 1", calculo1, 5);   
-        grafo.registrar("Introduccion a la ingenieria", introduccion, 1);    
+
+    private void armarGrafo() {
+        grafo.registrar("Algebra lineal", algebra, 3);
+        grafo.registrar("Calculo 1", calculo1, 5);
+        grafo.registrar("Introduccion a la ingenieria", introduccion, 1);
         grafo.registrar("Algoritmia 1", algoritmia1, 3);
-        grafo.registrar("Competencias 1",  competencias1, 3);    
-        grafo.registrar("Ingles 1",  ingles1, 0);    
-        grafo.registrar("Electiva historia",  historia, 3);    
-        grafo.registrar("Calculo 2", calculo2, 4);   
+        grafo.registrar("Competencias 1", competencias1, 3);
+        grafo.registrar("Ingles 1", ingles1, 0);
+        grafo.registrar("Electiva historia", historia, 3);
+        grafo.registrar("Calculo 2", calculo2, 4);
         grafo.registrar("Fisica mecanica", fisicamecanica, 4);
         grafo.registrar("Algoritmia 2", algoritmia2, 3);
         grafo.registrar("Competencias 2", competencias2, 3);
-        grafo.registrar("Ingles 2", ingles2, 0);    
-        grafo.registrar("Electiva humanidades", humanidades, 3);    
-        grafo.registrar("Calculo 3", calculo3, 4);   
+        grafo.registrar("Ingles 2", ingles2, 0);
+        grafo.registrar("Electiva humanidades", humanidades, 3);
+        grafo.registrar("Calculo 3", calculo3, 4);
         grafo.registrar("Fisica calor", fisicacalor, 4);
         grafo.registrar("Estructuras 1", estructuras1, 3);
         grafo.registrar("POO", poo, 3);
-        grafo.registrar("Ingles 3", ingles3, 0);    
-        grafo.registrar("Electiva ciencias de la vida", cienciasvida, 3);    
-        grafo.registrar("Ecuaciones", ecuaciones, 3);   
+        grafo.registrar("Ingles 3", ingles3, 0);
+        grafo.registrar("Electiva ciencias de la vida", cienciasvida, 3);
+        grafo.registrar("Ecuaciones", ecuaciones, 3);
         grafo.registrar("Fisica electrica", fisicaelectrica, 4);
         grafo.registrar("Estructuras 2", estructuras2, 3);
         grafo.registrar("Matematicas discretas", discretas, 3);
-        grafo.registrar("Ingles 4", ingles4, 0);   
+        grafo.registrar("Ingles 4", ingles4, 0);
         grafo.registrar("Seminario 1", seminario1, 0);
         grafo.registrar("Electiva ciencias basicas", cienciasbasicas, 3);
         grafo.registrar("Analisis de datos", analisisdatos, 4);
-        grafo.registrar("Algoritmos y complejidad", complejidad, 3);    
-        grafo.registrar("Estructuras discretas", estructurasdiscretas, 3);    
-        grafo.registrar("Diseño digital", diseño, 3);   
+        grafo.registrar("Algoritmos y complejidad", complejidad, 3);
+        grafo.registrar("Estructuras discretas", estructurasdiscretas, 3);
+        grafo.registrar("Diseño digital", diseño, 3);
         grafo.registrar("Ingles 5", ingles5, 0);
-        grafo.registrar("Examen comprehensivo 1", examencom1, 0);   
+        grafo.registrar("Examen comprehensivo 1", examencom1, 0);
         grafo.registrar("Electiva basica profesional", basicaprofesional, 3);
-        grafo.registrar("Soluciones computacionales", soluciones, 3);   
+        grafo.registrar("Soluciones computacionales", soluciones, 3);
         grafo.registrar("Bases de datos", basesdatos, 3);
         grafo.registrar("Redes", redes, 3);
-        grafo.registrar("Estructura del computador 1",estructuracomputador1, 3);
-        grafo.registrar("Ingles 6", ingles6, 0);  
-        grafo.registrar("Electiva etica", etica, 3);    
-        grafo.registrar("Optimizacion", optimizacion, 3);   
+        grafo.registrar("Estructura del computador 1", estructuracomputador1, 3);
+        grafo.registrar("Ingles 6", ingles6, 0);
+        grafo.registrar("Electiva etica", etica, 3);
+        grafo.registrar("Optimizacion", optimizacion, 3);
         grafo.registrar("Diseño de software 1", diseñosoftware1, 3);
         grafo.registrar("Sistemas operativos", sistemasoperativos, 3);
         grafo.registrar("Estructura del computador 2", estructuracomputador2, 3);
-        grafo.registrar("Ingles 7", ingles7, 0);    
-        grafo.registrar("Electiva sociales", sociales, 3);    
-        grafo.registrar("Electiva profesional 1", profesional1, 3);   
+        grafo.registrar("Ingles 7", ingles7, 0);
+        grafo.registrar("Electiva sociales", sociales, 3);
+        grafo.registrar("Electiva profesional 1", profesional1, 3);
         grafo.registrar("Diseño de software 2", diseñosoftware2, 3);
         grafo.registrar("Electiva en redes", electivaredes, 2);
         grafo.registrar("Compiladores", compiladores, 3);
-        grafo.registrar("Ingles 8", ingles8, 0);    
-        grafo.registrar("Electiva innovacion", innovacion, 3);    
-        grafo.registrar("Electiva filosofia", filosofia, 3);   
+        grafo.registrar("Ingles 8", ingles8, 0);
+        grafo.registrar("Electiva innovacion", innovacion, 3);
+        grafo.registrar("Electiva filosofia", filosofia, 3);
         grafo.registrar("Electiva profesional 2", profesional2, 3);
         grafo.registrar("Electiva ciencias computacion", cienciascomputacion, 3);
-        grafo.registrar("Electiva gestion informatica", gestionInformatica, 3);   
+        grafo.registrar("Electiva gestion informatica", gestionInformatica, 3);
         grafo.registrar("Electiva formacion complementaria 1", formacionComplementaria1, 3);
         grafo.registrar("Examen comprehensivo 2", examencom2, 0);
-        grafo.registrar("Electiva estudios caribe", estudiosdelcaribe, 3);    
-        grafo.registrar("Electiva profesional 3", profesional3, 3);   
+        grafo.registrar("Electiva estudios caribe", estudiosdelcaribe, 3);
+        grafo.registrar("Electiva profesional 3", profesional3, 3);
         grafo.registrar("Proyecto final", proyectofinal, 3);
         grafo.registrar("Electiva formacion complementaria 2", formacioncomplementaria2, 3);
         grafo.registrar("Seminario 2", seminario2, 0);
-        
+
     }
-    
-    private void definirAristas(){
+
+    private void definirAristas() {
         //CONECTAR LAS ARISTAS
         grafo.prereq("Calculo 3", "Algebra lineal");
         grafo.prereq("Calculo 2", "Calculo 1");
@@ -127,28 +128,29 @@ public class Sistemas extends javax.swing.JFrame {
         grafo.prereq("Proyecto final", "Ingles 8");
         grafo.prereq("Examen comprehensivo 2", "Examen comprehensivo 1");
     }
-    
+
     private void inicializarEstados() {
         for (Nodo nodo : grafo.getNodos().values()) {
             nodo.setEstado(nodo.getPrereqs().isEmpty() ? Estado.DISPONIBLE : Estado.BLOQUEADA);
         }
     }
+
     private void conectarListeners() {
         for (Nodo n : grafo.getNodos().values()) {
             n.getBoton().addActionListener(e -> onClickNodo(n));
         }
     }
-    
+
     private void onClickNodo(Nodo n) {
-    /*if (n.getEstado() != Estado.DISPONIBLE && n.getEstado() != Estado.APROBADA) {
+        /*if (n.getEstado() != Estado.DISPONIBLE && n.getEstado() != Estado.APROBADA) {
         java.awt.Toolkit.getDefaultToolkit().beep();
         return;
     }*/
 
-    //Si está aprobada, al hacer clic se revoca
-    if (n.getEstado() == Estado.APROBADA) {
-        grafo.revocarNodo(n);
-        /*n.setEstado(Estado.DISPONIBLE);
+        //Si está aprobada, al hacer clic se revoca
+        if (n.getEstado() == Estado.APROBADA) {
+            grafo.revocarNodo(n);
+            /*n.setEstado(Estado.DISPONIBLE);
         // Bloquear sucesoras que dependan de esta materia
         for (String sucId : n.getSucesoras()) {
             Nodo s = grafo.getNodos().get(sucId);
@@ -157,18 +159,18 @@ public class Sistemas extends javax.swing.JFrame {
                 s.setEstado(Estado.BLOQUEADA);
             }
         }*/
+            actualizarInterfaz();
+            return;
+        }
+        grafo.aprobarNodo(n);
         actualizarInterfaz();
-        return;
+        if (grafo.todasAprobadas()) {
+            int creditosTotales = grafo.calcularCreditosAprobados();
+            JOptionPane.showMessageDialog(null,
+                    "FELICIDADES, Has ganado todas las materias\n"
+                    + "Créditos completados: " + creditosTotales);
+        }
     }
-    grafo.aprobarNodo(n);
-    actualizarInterfaz();
-    if (grafo.todasAprobadas()) {
-        int creditosTotales = grafo.calcularCreditosAprobados();
-        JOptionPane.showMessageDialog(null,
-            "FELICIDADES, Has ganado todas las materias\n" +
-            "Créditos completados: " + creditosTotales);
-    }
-}
 
     /*private void onClickNodo(Nodo n) {
     if (n.getEstado() != Estado.DISPONIBLE) {
@@ -183,14 +185,12 @@ public class Sistemas extends javax.swing.JFrame {
                     "Créditos completados: " + creditosTotales);
         }
     }*/
-    
-    
     private void actualizarInterfaz() {
         for (Nodo n : grafo.getNodos().values()) {
             switch (n.getEstado()) {
                 case BLOQUEADA -> {
                     n.getBoton().setEnabled(false);
-                    n.getBoton().setBackground(new java.awt.Color(220,220,220));
+                    n.getBoton().setBackground(new java.awt.Color(220, 220, 220));
                     n.getBoton().setForeground(java.awt.Color.DARK_GRAY);
                 }
                 case DISPONIBLE -> {
@@ -201,13 +201,14 @@ public class Sistemas extends javax.swing.JFrame {
                 case APROBADA -> {
                     n.getBoton().setEnabled(true);
                     n.getBoton().setContentAreaFilled(true);
-                    n.getBoton().setBackground(new java.awt.Color(180,255,180));
+                    n.getBoton().setBackground(new java.awt.Color(180, 255, 180));
                     n.getBoton().setForeground(java.awt.Color.BLACK);
-                   
+
                 }
             }
         }
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -681,25 +682,7 @@ public class Sistemas extends javax.swing.JFrame {
     }//GEN-LAST:event_profesional1ActionPerformed
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Sistemas().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
