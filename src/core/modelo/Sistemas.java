@@ -344,6 +344,11 @@ public class Sistemas extends javax.swing.JFrame {
         diseño.setText("Diseño digital");
 
         ingles5.setText("Ingles 5");
+        ingles5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingles5ActionPerformed(evt);
+            }
+        });
 
         analisisdatos.setText("Analisis de datos en ing");
 
@@ -680,6 +685,10 @@ public class Sistemas extends javax.swing.JFrame {
     private void profesional1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profesional1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_profesional1ActionPerformed
+
+    private void ingles5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingles5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ingles5ActionPerformed
 
     public static void main(String args[]) {
 
