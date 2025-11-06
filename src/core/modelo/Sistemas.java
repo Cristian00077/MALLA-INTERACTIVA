@@ -65,7 +65,7 @@ public class Sistemas extends javax.swing.JFrame {
         grafo.registrar("Electiva sociales", sociales, 3);    
         grafo.registrar("Electiva profesional 1", profesional1, 3);   
         grafo.registrar("Diseño de software 2", diseñosoftware2, 3);
-        grafo.registrar("Electiva en redes", electivaredes, 3);
+        grafo.registrar("Electiva en redes", electivaredes, 2);
         grafo.registrar("Compiladores", compiladores, 3);
         grafo.registrar("Ingles 8", ingles8, 0);    
         grafo.registrar("Electiva innovacion", innovacion, 3);    
@@ -140,53 +140,50 @@ public class Sistemas extends javax.swing.JFrame {
     }
     
     private void onClickNodo(Nodo n) {
+    /*if (n.getEstado() != Estado.DISPONIBLE && n.getEstado() != Estado.APROBADA) {
+        java.awt.Toolkit.getDefaultToolkit().beep();
+        return;
+    }*/
+
+    //Si está aprobada, al hacer clic se revoca
+    if (n.getEstado() == Estado.APROBADA) {
+        grafo.revocarNodo(n);
+        /*n.setEstado(Estado.DISPONIBLE);
+        // Bloquear sucesoras que dependan de esta materia
+        for (String sucId : n.getSucesoras()) {
+            Nodo s = grafo.getNodos().get(sucId);
+            // Si alguna de sus prerequisitos ya no está aprobada, la bloqueamos
+            if (!grafo.todosPreAprobados(s)) {
+                s.setEstado(Estado.BLOQUEADA);
+            }
+        }*/
+        actualizarInterfaz();
+        return;
+    }
+    grafo.aprobarNodo(n);
+    actualizarInterfaz();
+    if (grafo.todasAprobadas()) {
+        int creditosTotales = grafo.calcularCreditosAprobados();
+        JOptionPane.showMessageDialog(null,
+            "FELICIDADES, Has ganado todas las materias\n" +
+            "Créditos completados: " + creditosTotales);
+    }
+}
+
+    /*private void onClickNodo(Nodo n) {
     if (n.getEstado() != Estado.DISPONIBLE) {
         java.awt.Toolkit.getDefaultToolkit().beep();
         return;
     }
-    n.setEstado(Estado.APROBADA);
-
-    // desbloquear sucesoras que ya cumplan todos los prereqs
-    for (String sucId : n.getSucesoras()) {
-        Nodo s = grafo.getNodos().get(sucId);
-        if (todosPreAprobados(s) && s.getEstado() != Estado.APROBADA) {
-            s.setEstado(Estado.DISPONIBLE);
-        }
-    }
+    grafo.aprobarNodo(n);
     actualizarInterfaz();
-        if (todasAprobadas()) {
-            int creditosTotales = calcularCreditosAprobados();
+        if (grafo.todasAprobadas()) {
+            int creditosTotales = grafo.calcularCreditosAprobados();
             JOptionPane.showMessageDialog(null, "FELICIDADES, Has ganado todas las materias\n" + 
                     "Créditos completados: " + creditosTotales);
         }
-    }
+    }*/
     
-    private boolean todasAprobadas() {
-    for (Nodo nodo : grafo.getNodos().values()) {
-        if (nodo.getEstado() != Estado.APROBADA) {
-            return false;
-        }
-    }
-    return true;
-}
-    
-    private boolean todosPreAprobados(Nodo n) {
-        for (String pre : n.getPrereqs()) {
-            if (grafo.getNodos().get(pre).getEstado() != Estado.APROBADA) 
-                return false;
-        }
-        return true;
-    }
-    
-    private int calcularCreditosAprobados() {
-    int total = 0;
-    for (Nodo nodo : grafo.getNodos().values()) {
-        if (nodo.getEstado() == Estado.APROBADA) {
-            total = total + nodo.getCreditos();
-        }
-    }
-    return total;
-}
     
     private void actualizarInterfaz() {
         for (Nodo n : grafo.getNodos().values()) {
