@@ -57,31 +57,6 @@ public class Grafo {
         return total;
     }
     
-    /*public void revocarNodo(Nodo n) {
-    n.setEstado(Estado.DISPONIBLE);
-    // Bloquear las sucesoras dependientes de este nodo
-    for (String sucId : n.getSucesoras()) {
-        Nodo s = nodos.get(sucId);
-        // Si alguna de sus prereqs ahora ya no está aprobada, se bloquea
-        if (!todosPreAprobados(s)) {
-            s.setEstado(Estado.BLOQUEADA);
-            // Y se propaga el bloqueo recursivamente
-            revocarNodo(s);
-        }
-        }
-    }*/
-    
-    /*public void revocarNodo(Nodo n){
-        n.setEstado(Estado.DISPONIBLE);
-        for (String sucId : n.getSucesoras()) {
-            Nodo s = nodos.get(sucId);
-            if (!todosPreAprobados(s)) {
-                s.setEstado(Estado.BLOQUEADA);
-                
-            }
-        }
-    }*/
-    
     public void revocarNodo(Nodo n) {
     n.setEstado(Estado.DISPONIBLE);
     for (String sucId : n.getSucesoras()) {
@@ -96,11 +71,17 @@ public class Grafo {
     if (n.getEstado() == Estado.BLOQUEADA)
         return; 
     n.setEstado(Estado.BLOQUEADA);
-    for (String sucId : n.getSucesoras()) {
-        Nodo s = nodos.get(sucId);
-        bloquearEnCadena(s); 
+        for (String sucId : n.getSucesoras()) {
+            Nodo s = nodos.get(sucId);
+            bloquearEnCadena(s); 
+        }
     }
-}
+
+    public void limpiarGrafo() {
+        for (Nodo nodo : nodos.values()) {
+            nodo.setEstado(nodo.getPrereqs().isEmpty() ? Estado.DISPONIBLE : Estado.BLOQUEADA);
+        }
+    }
 
     
 }
