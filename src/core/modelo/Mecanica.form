@@ -23,7 +23,52 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="1442" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="ingles8" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="ElectivaHistoria" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="sociales" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="humanidades" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="ElectivaEstudioCaribe" min="-2" pref="110" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="Isem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="IIsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="IIIsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="IVsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <Component id="Vsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="VIsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Component id="VIIsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="VIIIsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace pref="72" max="32767" attributes="0"/>
+              <Component id="IXsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="Xsem" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -35,19 +80,19 @@
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                           <Component id="calculo3" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="mecanicadesolidos" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Termo1" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="basicaprofesional" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Termo2" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="historia" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="AnalisisDatos" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                          <Component id="construccion" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ModelosSistemasDinam" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="administracion" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ProyectoInves" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="profesional2" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElectivaDiseñoMateriales" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
-                          <Component id="profesional3" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElecativaMec" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="introduccion" min="-2" pref="110" max="-2" attributes="0"/>
@@ -58,13 +103,13 @@
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                           <Component id="fisicaelectrica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="materiales" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="MecanicaMaquinas" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="analisisestructural" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="TransferenciaCalor" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                          <Component id="diseñoestructural" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="DiseñoSistemaTermo" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="ingenieriaambiental" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="InstrumentacionControl" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                           <Component id="complementaria1" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
@@ -77,40 +122,34 @@
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                           <Component id="estatica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="geologia" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="Dinamica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="soluciones" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ProcesosFabricacion" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="mecanicadesuelos" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="DiseñoMec" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                          <Component id="fundaciones" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="DiseñoSistemaMec" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="etica" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="filosofia" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                          <Component id="GestionActivos" min="-2" pref="110" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
                           <Component id="formacioncomplementaria2" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="algebra" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="quimica" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
                           <Component id="ecuaciones" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="analisisdatos" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="IngMateriales" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="cienciasbasicas" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="SolucionComput" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="formulacion" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="IngEconomica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                          <Component id="diseñodevias" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElectivaSistemaElec" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="ingenieriadetransporte" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElectivaCienciasVida" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="profesional1" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
-                          <Component id="humanidades" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElectivaEnergia" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="590" max="-2" attributes="0"/>
@@ -134,8 +173,6 @@
                                   <Component id="ingles6" min="-2" pref="110" max="-2" attributes="0"/>
                                   <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
                                   <Component id="ingles7" min="-2" pref="110" max="-2" attributes="0"/>
-                                  <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                                  <Component id="ingles8" min="-2" pref="110" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="443" max="-2" attributes="0"/>
@@ -157,19 +194,15 @@
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                           <Component id="competencias2" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="topografia" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="CienciaMateriales" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="estudiosdelcaribe" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="MecanicaSolidos" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                           <Component id="mecanicadefluidos" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="hidrologia" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                          <Component id="hidraulica" min="-2" pref="110" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
+                          <Component id="ElectivaEtica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                          <Component id="acueducto" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                          <Component id="sociales" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="ElectivaFilosofia" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -179,34 +212,58 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="612" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="IIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="Isem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="IVsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="IIIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="VIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="Vsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="VIIIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="VIIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="Xsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="IXsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="ElectivaEstudioCaribe" min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace pref="170" max="32767" attributes="0"/>
+              <Component id="humanidades" min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ElectivaHistoria" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="sociales" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="ingles8" min="-2" pref="55" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+          </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="91" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="algebra" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="quimica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="ecuaciones" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="analisisdatos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="cienciasbasicas" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="formulacion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="diseñodevias" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="ingenieriadetransporte" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="profesional1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="humanidades" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="IngMateriales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="SolucionComput" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="IngEconomica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaSistemaElec" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaCienciasVida" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaEnergia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="calculo1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="calculo2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="calculo3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="mecanicadesolidos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="basicaprofesional" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="historia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="construccion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="administracion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="profesional2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="profesional3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Termo1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Termo2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="AnalisisDatos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ModelosSistemasDinam" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ProyectoInves" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaDiseñoMateriales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElecativaMec" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -214,10 +271,10 @@
                       <Component id="fisicamecanica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="fisicacalor" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="fisicaelectrica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="materiales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="analisisestructural" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="diseñoestructural" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="ingenieriaambiental" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="MecanicaMaquinas" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="TransferenciaCalor" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="DiseñoSistemaTermo" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="InstrumentacionControl" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="complementaria1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="proyectofinal" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
@@ -226,25 +283,22 @@
                       <Component id="expresion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="algoritmia1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="estatica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="geologia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="soluciones" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="mecanicadesuelos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="fundaciones" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="etica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="filosofia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="Dinamica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ProcesosFabricacion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="DiseñoMec" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="DiseñoSistemaMec" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="GestionActivos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="formacioncomplementaria2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="competencias1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="competencias2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="topografia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="estudiosdelcaribe" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="CienciaMateriales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="MecanicaSolidos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="mecanicadefluidos" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="hidrologia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="hidraulica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="acueducto" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="sociales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaEtica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="ElectivaFilosofia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -255,13 +309,9 @@
                       <Component id="ingles5" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="ingles6" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="ingles7" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
-                          <Component id="ingles8" min="-2" pref="55" max="-2" attributes="0"/>
-                      </Group>
                       <Component id="examencom2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="seminario1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="examencom1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
@@ -285,19 +335,19 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="etica">
+    <Component class="javax.swing.JButton" name="GestionActivos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva etica"/>
+        <Property name="text" type="java.lang.String" value="Gesti&#xf3;n de Activos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="geologia">
+    <Component class="javax.swing.JButton" name="Dinamica">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Geologia"/>
+        <Property name="text" type="java.lang.String" value="Din&#xe1;mica"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="cienciasbasicas">
+    <Component class="javax.swing.JButton" name="SolucionComput">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva ciencias basicas "/>
+        <Property name="text" type="java.lang.String" value="Soln. Comput. de Problem. Ing."/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="humanidades">
@@ -330,19 +380,19 @@
         <Property name="text" type="java.lang.String" value="Ecuaciones diferenciales"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="profesional1">
+    <Component class="javax.swing.JButton" name="ElectivaEnergia">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva profesional 1"/>
+        <Property name="text" type="java.lang.String" value="Electiva en Energ&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="profesional3">
+    <Component class="javax.swing.JButton" name="ElecativaMec">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva profesional 3"/>
+        <Property name="text" type="java.lang.String" value="Electiva Ing. Mecanica"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="topografia">
+    <Component class="javax.swing.JButton" name="CienciaMateriales">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Topografia"/>
+        <Property name="text" type="java.lang.String" value="Ciencia de los Materiales"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="RegresarBtn">
@@ -386,19 +436,14 @@
         <Property name="text" type="java.lang.String" value="Electiva ciencias sociales"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="quimica">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Quimica"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="seminario1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Seminario de carrera 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="basicaprofesional">
+    <Component class="javax.swing.JButton" name="Termo2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva basica profesional"/>
+        <Property name="text" type="java.lang.String" value="Termodin&#xe1;mica II"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="fisicacalor">
@@ -416,14 +461,14 @@
         <Property name="text" type="java.lang.String" value="Examen comprehensivo 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="materiales">
+    <Component class="javax.swing.JButton" name="MecanicaMaquinas">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Materiales de construccion"/>
+        <Property name="text" type="java.lang.String" value="Mec&#xe1;nica de M&#xe1;quinas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="mecanicadesuelos">
+    <Component class="javax.swing.JButton" name="Dise&#xf1;oMec">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Mecanica de suelos"/>
+        <Property name="text" type="java.lang.String" value="Dise&#xf1;o Mec&#xe1;nico"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="competencias2">
@@ -441,9 +486,9 @@
         <Property name="text" type="java.lang.String" value="Ingles 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="dise&#xf1;odevias">
+    <Component class="javax.swing.JButton" name="ElectivaSistemaElec">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Dise&#xf1;o de vias"/>
+        <Property name="text" type="java.lang.String" value="Electiva Sistemas El&#xe9;ctricos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="calculo2">
@@ -451,14 +496,14 @@
         <Property name="text" type="java.lang.String" value="Calculo 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="analisisdatos">
+    <Component class="javax.swing.JButton" name="IngMateriales">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Analisis de datos"/>
+        <Property name="text" type="java.lang.String" value="Ingenier&#xed;a de Materiales"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="hidraulica">
+    <Component class="javax.swing.JButton" name="ElectivaEtica">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Hidraulica"/>
+        <Property name="text" type="java.lang.String" value="Electiva en Etica"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ingles7">
@@ -466,9 +511,9 @@
         <Property name="text" type="java.lang.String" value="Ingles 7"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="construccion">
+    <Component class="javax.swing.JButton" name="ModelosSistemasDinam">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Construccion"/>
+        <Property name="text" type="java.lang.String" value="Modelos de Sistemas Din&#xe1;micos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="fisicamecanica">
@@ -476,19 +521,19 @@
         <Property name="text" type="java.lang.String" value="Fisica mecanica"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="soluciones">
+    <Component class="javax.swing.JButton" name="ProcesosFabricacion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Soluciones computacionales"/>
+        <Property name="text" type="java.lang.String" value="Procesos de Fabricaci&#xf3;n"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="formulacion">
+    <Component class="javax.swing.JButton" name="IngEconomica">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Formulacion y evaluacion de proyectos"/>
+        <Property name="text" type="java.lang.String" value="Ingenier&#xed;a Econ&#xf3;mica"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="dise&#xf1;oestructural">
+    <Component class="javax.swing.JButton" name="Dise&#xf1;oSistemaTermo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Dise&#xf1;o estructural"/>
+        <Property name="text" type="java.lang.String" value="Dise&#xf1;o de Sistemas T&#xe9;rmofluidos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="algebra">
@@ -499,14 +544,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="algebraActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="estudiosdelcaribe">
+    <Component class="javax.swing.JButton" name="MecanicaSolidos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Estudios del caribe"/>
+        <Property name="text" type="java.lang.String" value="Mec&#xe1;nica de S&#xf3;lidos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="hidrologia">
+    <Component class="javax.swing.JButton" name="ElectivaEstudioCaribe">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Hidrologia"/>
+        <Property name="text" type="java.lang.String" value="Elect Estudios del Caribe"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ingles4">
@@ -543,34 +588,34 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limpiarbtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="profesional2">
+    <Component class="javax.swing.JButton" name="ElectivaDise&#xf1;oMateriales">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva profesional 2"/>
+        <Property name="text" type="java.lang.String" value="Electiva en Dise&#xf1;o y Materiales"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="fundaciones">
+    <Component class="javax.swing.JButton" name="Dise&#xf1;oSistemaMec">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Fundaciones"/>
+        <Property name="text" type="java.lang.String" value="Dise&#xf1;o de Sistemas Mec&#xe1;nicos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="historia">
+    <Component class="javax.swing.JButton" name="AnalisisDatos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva historia"/>
+        <Property name="text" type="java.lang.String" value="An&#xe1;lisis de Datos en Ingenier&#xed;a I"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="ingenieriadetransporte">
+    <Component class="javax.swing.JButton" name="ElectivaCienciasVida">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingenieria de transporte"/>
+        <Property name="text" type="java.lang.String" value="Elec Ciencias de la vida"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="acueducto">
+    <Component class="javax.swing.JButton" name="ElectivaFilosofia">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Acueducto y alcantarillado"/>
+        <Property name="text" type="java.lang.String" value="Electiva en Filosof&#xed;a"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="mecanicadesolidos">
+    <Component class="javax.swing.JButton" name="Termo1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Mecanica de solidos"/>
+        <Property name="text" type="java.lang.String" value="Termodin&#xe1;mica I"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="ingles8">
@@ -591,12 +636,12 @@
         <Property name="text" type="java.lang.String" value="Fisica electricidad"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="administracion">
+    <Component class="javax.swing.JButton" name="ProyectoInves">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Administraccion y control de la construccion"/>
+        <Property name="text" type="java.lang.String" value="Proyecto de Investigaci&#xf3;n"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="administracionActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProyectoInvesActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="calculo1">
@@ -609,28 +654,108 @@
         <Property name="text" type="java.lang.String" value="Electiva formacion complementaria 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="ingenieriaambiental">
+    <Component class="javax.swing.JButton" name="InstrumentacionControl">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Ingenieria ambiental"/>
+        <Property name="text" type="java.lang.String" value="Instrumentaci&#xf3;n y Control"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ingenieriaambientalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="InstrumentacionControlActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="analisisestructural">
+    <Component class="javax.swing.JButton" name="TransferenciaCalor">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Analisis estructural"/>
+        <Property name="text" type="java.lang.String" value="Transferencia de Calor"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="introduccion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Introduccion a ingenieria civil"/>
+        <Property name="text" type="java.lang.String" value="Introducci&#xf3;n a la Ing Mec&#xe1;nica "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="filosofia">
+    <Component class="javax.swing.JButton" name="ElectivaHistoria">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Electiva filosofia"/>
+        <Property name="text" type="java.lang.String" value="Electiva en Historia"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="IIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="II"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Isem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="I"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="IVsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="IV"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IVsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="IIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="III"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IIIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VI"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Vsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="V"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VIII"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VIIIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VII"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VIIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Xsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="IXsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="IX"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IXsemActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

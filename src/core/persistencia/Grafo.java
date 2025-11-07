@@ -1,10 +1,13 @@
 package core.persistencia;
+
 import java.util.*;
 import javax.swing.JButton;
 
 public class Grafo {
+
     private final Map<String, Nodo> nodos = new HashMap<>();
     
+
     public Nodo registrar(String id, JButton boton, int creditos) {
         Nodo n = new Nodo(id, boton, creditos);
         nodos.put(id, n);
@@ -16,10 +19,14 @@ public class Grafo {
         nodos.get(pre).getSucesoras().add(curso);
     }
 
-    public Map<String, Nodo> getNodos() { 
-        return nodos; 
+    public Map<String, Nodo> getNodos() {
+        return nodos;
     }
-    
+
+    public Nodo getNodo(String nombre) {
+        return nodos.get(nombre);
+    }
+
     public void aprobarNodo(Nodo n) {
         n.setEstado(Estado.APROBADA);
         for (String sucId : n.getSucesoras()) {
@@ -29,51 +36,53 @@ public class Grafo {
             }
         }
     }
-    
+
     public boolean todasAprobadas() {
-    for (Nodo nodo : nodos.values()) {
-        if (nodo.getEstado() != Estado.APROBADA) {
-            return false;
+        for (Nodo nodo : nodos.values()) {
+            if (nodo.getEstado() != Estado.APROBADA) {
+                return false;
+            }
         }
-    }
         return true;
     }
-    
+
     public boolean todosPreAprobados(Nodo n) {
         for (String pre : n.getPrereqs()) {
-            if (nodos.get(pre).getEstado() != Estado.APROBADA) 
+            if (nodos.get(pre).getEstado() != Estado.APROBADA) {
                 return false;
+            }
         }
         return true;
     }
-    
+
     public int calcularCreditosAprobados() {
-    int total = 0;
-    for (Nodo nodo : nodos.values()) {
-        if (nodo.getEstado() == Estado.APROBADA) {
-            total = total + nodo.getCreditos();
+        int total = 0;
+        for (Nodo nodo : nodos.values()) {
+            if (nodo.getEstado() == Estado.APROBADA) {
+                total = total + nodo.getCreditos();
+            }
         }
-    }
         return total;
     }
-    
+
     public void revocarNodo(Nodo n) {
-    n.setEstado(Estado.DISPONIBLE);
-    for (String sucId : n.getSucesoras()) {
-        Nodo s = nodos.get(sucId);
+        n.setEstado(Estado.DISPONIBLE);
+        for (String sucId : n.getSucesoras()) {
+            Nodo s = nodos.get(sucId);
             if (!todosPreAprobados(s)) {
                 bloquearEnCadena(s);
             }
         }
-    }   
-    
+    }
+
     private void bloquearEnCadena(Nodo n) {
-    if (n.getEstado() == Estado.BLOQUEADA)
-        return; 
-    n.setEstado(Estado.BLOQUEADA);
+        if (n.getEstado() == Estado.BLOQUEADA) {
+            return;
+        }
+        n.setEstado(Estado.BLOQUEADA);
         for (String sucId : n.getSucesoras()) {
             Nodo s = nodos.get(sucId);
-            bloquearEnCadena(s); 
+            bloquearEnCadena(s);
         }
     }
 
@@ -83,5 +92,4 @@ public class Grafo {
         }
     }
 
-    
 }
