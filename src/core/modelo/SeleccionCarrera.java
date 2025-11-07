@@ -109,8 +109,8 @@ public class SeleccionCarrera extends javax.swing.JFrame {
             Civil civil = new Civil();
             civil.setVisible(true);
         } else if (index == 3) {
-            //Mecanica mecanica = new Mecanica();
-            //mecanica.setVisible(true);
+            Mecanica mecanica = new Mecanica();
+            mecanica.setVisible(true);
         } else if (index == 4){
             Electrica electrica = new Electrica();
             electrica.setVisible(true);

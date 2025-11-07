@@ -1,4 +1,3 @@
-
 package core.modelo;
 
 import core.persistencia.Estado;
@@ -7,11 +6,16 @@ import static core.persistencia.Estado.BLOQUEADA;
 import static core.persistencia.Estado.DISPONIBLE;
 import core.persistencia.Grafo;
 import core.persistencia.Nodo;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import javax.swing.JOptionPane;
 
 public class Mecanica extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Mecanica.class.getName());
+    private Map<Integer, List<Nodo>> materiasPorSemestre = new HashMap<>();
 
     public Mecanica() {
         initComponents();
@@ -20,11 +24,71 @@ public class Mecanica extends javax.swing.JFrame {
         inicializarEstados();
         conectarListeners();
         actualizarInterfaz();
+        agruparPorSemestre();
+        conectarBotonesSemestre();
     }
-    
+
     Grafo grafo = new Grafo();
-    
-    private void armarGrafo(){
+
+    private void armarGrafo() {
+        /*grafo.registrar("Algebra lineal", algebra, 3);
+        grafo.registrar("Calculo 1", calculo1, 5);
+        grafo.registrar("Introduccion a la ingenieria", introduccion, 1);
+        grafo.registrar("Competencias 1", competencias1, 3);
+        grafo.registrar("Ingles 1", ingles1, 0);
+        grafo.registrar("Calculo 2", calculo2, 4);
+        grafo.registrar("Fisica mecanica", fisicamecanica, 4);
+        grafo.registrar("Algoritmia 1", algoritmia1, 3);
+        grafo.registrar("Competencias 2", competencias2, 3);
+        grafo.registrar("Fisica calor", fisicacalor, 4);
+        grafo.registrar("Estatica", estatica, 3);
+        grafo.registrar("CienciaMateriales", CienciaMateriales, 3);
+        grafo.registrar("Ecuaciones", ecuaciones, 3);
+        grafo.registrar("Ingles 3", ingles3, 0);
+        grafo.registrar("Ing Materiales", IngMateriales, 4);
+        grafo.registrar("Fisica electrica", fisicaelectrica, 4);
+        grafo.registrar("Termodinamica 1", Termo1, 3);
+        grafo.registrar("Dinamica", Dinamica, 3);
+        grafo.registrar("Mecanica de Solidos", MecanicaSolidos, 3);
+        grafo.registrar("Ingles 4", ingles4, 0);
+        grafo.registrar("Seminario 1", seminario1, 0);
+        grafo.registrar("Solucion computacionales", SolucionComput, 3);
+        grafo.registrar("Termo2", Termo2, 3);
+        grafo.registrar("MecanicaMaquinas", MecanicaMaquinas, 3);
+        grafo.registrar("Procesos Fabricacion", ProcesosFabricacion, 3);
+        grafo.registrar("Mecanica de fluidos", mecanicadefluidos, 3);
+        grafo.registrar("Examen comprehensivo 1", examencom1, 0);
+        grafo.registrar("Ingles 5", ingles5, 0);
+        grafo.registrar("Ing. Economica", IngEconomica, 3);
+        grafo.registrar("Analisis Datos", AnalisisDatos, 3);
+        grafo.registrar("Transferencia de calor", TransferenciaCalor, 3);
+        grafo.registrar("DiseñoMec", DiseñoMec, 3);
+        grafo.registrar("EstudioCaribe", ElectivaEstudioCaribe, 3);
+        grafo.registrar("Ingles 6", ingles6, 0);
+        grafo.registrar("Electiva de Sistemas Electricos", ElectivaSistemaElec, 3);
+        grafo.registrar("Modelo Sistemas Dinamicos", ModelosSistemasDinam, 3);
+        grafo.registrar("Diseño Sistema Termo", DiseñoSistemaTermo, 3);
+        grafo.registrar("Diseño Sistema Mecanico", DiseñoSistemaMec, 3);
+        grafo.registrar("Electiva Etica", ElectivaEtica, 3);
+        grafo.registrar("Ingles 7", ingles7, 0);
+        grafo.registrar("Electiva ciencias vida", ElectivaCienciasVida, 3);
+        grafo.registrar("Proyecto de investigacion", ProyectoInves, 3);
+        grafo.registrar("Instrumentacion Control", InstrumentacionControl, 2);
+        grafo.registrar("Gestion Activos", GestionActivos, 3);
+        grafo.registrar("Electiva filosofia", ElectivaFilosofia, 3);
+        grafo.registrar("Electiva innovacion", innovacion, 3);
+        grafo.registrar("Ingles 8", ingles8, 0);
+        grafo.registrar("Electiva Energia", ElectivaEnergia, 3);
+        grafo.registrar("Electiva Diseño Materiales", ElectivaDiseñoMateriales, 3);
+        grafo.registrar("Electiva formacion complementaria 1", complementaria1, 3);
+        grafo.registrar("Electiva Historia", ElectivaHistoria, 3);
+        grafo.registrar("Electiva sociales", sociales, 3);
+        grafo.registrar("Examen comprehensivo 2", examencom2, 0);
+        grafo.registrar("Seminario 2", seminario2, 0);
+        grafo.registrar("Electiva humanidades", humanidades, 3);
+        grafo.registrar("Electiva Mecanica", ElecativaMec, 3);
+        grafo.registrar("Proyecto final", proyectofinal, 3);
+        grafo.registrar("Electiva formacion complementaria 2", formacioncomplementaria2, 3);*/
         grafo.registrar("Algebra lineal", algebra, 3);    
         grafo.registrar("Calculo 1", calculo1, 5);   
         grafo.registrar("Introduccion a la ingenieria", introduccion, 1);    
@@ -88,9 +152,70 @@ public class Mecanica extends javax.swing.JFrame {
         grafo.registrar("Proyecto final", proyectofinal, 3);
         grafo.registrar("Electiva formacion complementaria 2", formacioncomplementaria2, 3);
     }
-    
-    private void definirAristas(){
+
+    private void definirAristas() {
         //CONECTAR LAS ARISTAS
+        /*grafo.prereq("Calculo 2", "Calculo 1");
+        grafo.prereq("Fisica mecanica", "Calculo 1");
+        grafo.prereq("Competencias 2", "Competencias 1");
+
+        grafo.prereq("Calculo 3", "Calculo 2");
+        grafo.prereq("Calculo 3", "Algebra lineal");
+        grafo.prereq("Fisica calor", "Calculo 1");
+        grafo.prereq("Fisica calor", "Fisica mecanica");
+        grafo.prereq("Estatica", "Fisica mecanica");
+        grafo.prereq("Ecuaciones", "Calculo 2");
+
+        grafo.prereq("Fisica electrica", "Calculo 2");
+        grafo.prereq("Fisica electrica", "Fisica mecanica");
+        grafo.prereq("Dinamica", "Calculo 2");
+        grafo.prereq("Dinamica", "Estatica");
+        grafo.prereq("Termodinamica 1", "Fisica calor");
+        grafo.prereq("Ing Materiales", "CienciaMateriales");
+        grafo.prereq("Mecanica de Solidos", "Estatica");
+
+        grafo.prereq("Solucion computacionales", "Algoritmia 1");
+        grafo.prereq("Solucion computacionales", "Ecuaciones");
+        grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
+        grafo.prereq("Examen comprehensivo 1", "Calculo 3");
+        grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
+        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
+        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
+        grafo.prereq("Termo2", "Termodinamica 1");
+        grafo.prereq("Procesos Fabricacion", "CienciaMateriales");
+        grafo.prereq("MecanicaMaquinas", "Dinamica");
+        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
+
+        grafo.prereq("Analisis Datos", "Calculo 2");
+        grafo.prereq("Transferencia de calor", "Termo2");
+        grafo.prereq("Transferencia de calor", "Mecanica de fluidos");
+        grafo.prereq("Transferencia de calor", "Examen comprehensivo 1");
+        grafo.prereq("DiseñoMec", "Mecanica de Solidos");
+        grafo.prereq("DiseñoMec", "MecanicaMaquinas");
+        grafo.prereq("DiseñoMec", "Examen comprehensivo 1");
+
+        grafo.prereq("Electiva de Sistemas Electricos", "Fisica electrica");
+        grafo.prereq("Modelo Sistemas Dinamicos", "Fisica electrica");
+        grafo.prereq("Modelo Sistemas Dinamicos", "Ecuaciones");
+        grafo.prereq("Modelo Sistemas Dinamicos", "Fisica calor");
+        grafo.prereq("Diseño Sistema Termo", "Transferencia de calor");
+        grafo.prereq("Diseño Sistema Termo", "Termo2");
+        grafo.prereq("Diseño Sistema Mecanico", "DiseñoMec");
+
+        grafo.prereq("Instrumentacion Control", "Modelo Sistemas Dinamicos");
+        grafo.prereq("Proyecto de investigacion", "Transferencia de calor");
+        grafo.prereq("Proyecto de investigacion", "DiseñoMec");
+
+        grafo.prereq("Electiva Energia", "Transferencia de calor");
+        grafo.prereq("Electiva Diseño Materiales", "DiseñoMec");
+
+        grafo.prereq("Electiva Mecanica", "DiseñoMec");
+        grafo.prereq("Electiva Mecanica", "Transferencia de calor");
+        grafo.prereq("Proyecto final", "Proyecto de investigacion");
+        grafo.prereq("Proyecto final", "DiseñoMec");
+        grafo.prereq("Proyecto final", "Diseño Sistema Termo");
+        grafo.prereq("Proyecto final", "Instrumentacion Control");
+        grafo.prereq("Proyecto final", "Ingles 8");*/
         grafo.prereq("Calculo 2", "Calculo 1");
         grafo.prereq("Fisica mecanica", "Calculo 1");
         grafo.prereq("Competencias 2", "Competencias 1");
@@ -141,40 +266,161 @@ public class Mecanica extends javax.swing.JFrame {
         grafo.prereq("Proyecto final", "Examen comprehensivo 2");
         grafo.prereq("Proyecto final", "Ingles 8");
     }
-    
+
+    private void agruparPorSemestre() {
+        materiasPorSemestre.put(1, Arrays.asList(
+                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Calculo 1"),
+                grafo.getNodo("Introduccion a la ingenieria"),
+                grafo.getNodo("Expresion grafica"),
+                grafo.getNodo("Competencias 1"),
+                grafo.getNodo("Ingles 1")
+        ));
+
+        materiasPorSemestre.put(2, Arrays.asList(
+                grafo.getNodo("Calculo 2"),
+                grafo.getNodo("Fisica mecanica"),
+                grafo.getNodo("Algoritmia 1"),
+                grafo.getNodo("Competencias 2"),
+                grafo.getNodo("Ingles 2")
+        ));
+
+        materiasPorSemestre.put(3, Arrays.asList(
+                grafo.getNodo("Calculo 3"),
+                grafo.getNodo("Fisica calor"),
+                grafo.getNodo("Estatica"),
+                grafo.getNodo("CienciaMateriales"),
+                grafo.getNodo("Ecuaciones"),
+                grafo.getNodo("Ingles 3")
+        ));
+
+        materiasPorSemestre.put(4, Arrays.asList(
+                grafo.getNodo("Ing Materiales"),
+                grafo.getNodo("Fisica electrica"),
+                grafo.getNodo("Termodinamica 1"),
+                grafo.getNodo("Dinamica"),
+                grafo.getNodo("Mecanica de Solidos"),
+                grafo.getNodo("Ingles 4"),
+                grafo.getNodo("Seminario 1")
+        ));
+
+        materiasPorSemestre.put(5, Arrays.asList(
+                grafo.getNodo("Solucion computacionales"),
+                grafo.getNodo("Termo2"),
+                grafo.getNodo("MecanicaMaquinas"),
+                grafo.getNodo("Procesos Fabricacion"),
+                grafo.getNodo("Mecanica de fluidos"),
+                grafo.getNodo("Examen comprehensivo 1"),
+                grafo.getNodo("Ingles 5")
+        ));
+
+        materiasPorSemestre.put(6, Arrays.asList(
+                grafo.getNodo("Ing. Economica"),
+                grafo.getNodo("Analisis Datos"),
+                grafo.getNodo("Transferencia de calor"),
+                grafo.getNodo("DiseñoMec"),
+                grafo.getNodo("Ingles 6")
+        ));
+
+        materiasPorSemestre.put(7, Arrays.asList(
+                grafo.getNodo("Electiva de Sistemas Electricos"),
+                grafo.getNodo("Modelo Sistemas Dinamicos"),
+                grafo.getNodo("Diseño Sistema Termo"),
+                grafo.getNodo("Diseño Sistema Mecanico"),
+                grafo.getNodo("Electiva Etica"),
+                grafo.getNodo("Ingles 7")
+        ));
+
+        materiasPorSemestre.put(8, Arrays.asList(
+                grafo.getNodo("Electiva ciencias vida"),
+                grafo.getNodo("Proyecto de investigacion"),
+                grafo.getNodo("Instrumentacion Control"),
+                grafo.getNodo("Gestion Activos"),
+                grafo.getNodo("Electiva filosofia"),
+                grafo.getNodo("Electiva innovacion"),
+                grafo.getNodo("Ingles 8")
+        ));
+
+        materiasPorSemestre.put(9, Arrays.asList(
+                grafo.getNodo("Electiva Energia"),
+                grafo.getNodo("Electiva Diseño Materiales"),
+                grafo.getNodo("Electiva formacion complementaria 1"),
+                grafo.getNodo("Electiva Historia"),
+                grafo.getNodo("Electiva humanidades"),
+                grafo.getNodo("Examen comprehensivo 2"),
+                grafo.getNodo("Seminario 2")
+        ));
+
+        materiasPorSemestre.put(10, Arrays.asList(
+                grafo.getNodo("Electiva Mecanica"),
+                grafo.getNodo("Proyecto final"),
+                grafo.getNodo("Electiva formacion complementaria 2"),
+                grafo.getNodo("EstudioCaribe"),
+                grafo.getNodo("Electiva sociales")
+        ));
+    }
+
+    private void seleccionarSemestre(int numero) {
+        List<Nodo> materias = materiasPorSemestre.get(numero);
+        if (materias == null) {
+            return;
+        }
+
+        for (Nodo n : materias) {
+            if (n.getEstado() != Estado.APROBADA) {
+                grafo.aprobarNodo(n); // Marca la materia como aprobada
+            }
+        }
+        actualizarInterfaz();
+    }
+
+    private void conectarBotonesSemestre() {
+        Isem.addActionListener(e -> seleccionarSemestre(1));
+        IIsem.addActionListener(e -> seleccionarSemestre(2));
+        IIIsem.addActionListener(e -> seleccionarSemestre(3));
+        IVsem.addActionListener(e -> seleccionarSemestre(4));
+        Vsem.addActionListener(e -> seleccionarSemestre(5));
+        VIsem.addActionListener(e -> seleccionarSemestre(6));
+        VIIsem.addActionListener(e -> seleccionarSemestre(7));
+        VIIIsem.addActionListener(e -> seleccionarSemestre(8));
+        IXsem.addActionListener(e -> seleccionarSemestre(9));
+        Xsem.addActionListener(e -> seleccionarSemestre(10));
+    }
+
     private void inicializarEstados() {
         for (Nodo nodo : grafo.getNodos().values()) {
             nodo.setEstado(nodo.getPrereqs().isEmpty() ? Estado.DISPONIBLE : Estado.BLOQUEADA);
         }
     }
+
     private void conectarListeners() {
         for (Nodo n : grafo.getNodos().values()) {
             n.getBoton().addActionListener(e -> onClickNodo(n));
         }
     }
-    
+
     private void onClickNodo(Nodo n) {
-    if (n.getEstado() == Estado.APROBADA) {
-        grafo.revocarNodo(n);
+        if (n.getEstado() == Estado.APROBADA) {
+            grafo.revocarNodo(n);
+            actualizarInterfaz();
+            return;
+        }
+        grafo.aprobarNodo(n);
         actualizarInterfaz();
-        return;
+        if (grafo.todasAprobadas()) {
+            int creditosTotales = grafo.calcularCreditosAprobados();
+            JOptionPane.showMessageDialog(null,
+                    "FELICIDADES, Has ganado todas las materias\n"
+                    + "Créditos completados: " + creditosTotales);
+        }
     }
-    grafo.aprobarNodo(n);
-    actualizarInterfaz();
-    if (grafo.todasAprobadas()) {
-        int creditosTotales = grafo.calcularCreditosAprobados();
-        JOptionPane.showMessageDialog(null,
-            "FELICIDADES, Has ganado todas las materias\n" +
-            "Créditos completados: " + creditosTotales);
-    }
-}
 
     private void actualizarInterfaz() {
         for (Nodo n : grafo.getNodos().values()) {
             switch (n.getEstado()) {
                 case BLOQUEADA -> {
                     n.getBoton().setEnabled(false);
-                    n.getBoton().setBackground(new java.awt.Color(220,220,220));
+                    n.getBoton().setBackground(new java.awt.Color(220, 220, 220));
                     n.getBoton().setForeground(java.awt.Color.DARK_GRAY);
                 }
                 case DISPONIBLE -> {
@@ -185,9 +431,9 @@ public class Mecanica extends javax.swing.JFrame {
                 case APROBADA -> {
                     n.getBoton().setEnabled(true);
                     n.getBoton().setContentAreaFilled(true);
-                    n.getBoton().setBackground(new java.awt.Color(180,255,180));
+                    n.getBoton().setBackground(new java.awt.Color(180, 255, 180));
                     n.getBoton().setForeground(java.awt.Color.BLACK);
-                   
+
                 }
             }
         }
@@ -225,18 +471,12 @@ public class Mecanica extends javax.swing.JFrame {
         etica = new javax.swing.JButton();
         expresion = new javax.swing.JButton();
         profesional1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         RegresarBtn = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         sociales = new javax.swing.JButton();
         mecanicadesolidos = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         fisicaelectrica = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         geologia = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         cienciasbasicas = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         quimica = new javax.swing.JButton();
         examencom2 = new javax.swing.JButton();
         competencias2 = new javax.swing.JButton();
@@ -247,16 +487,12 @@ public class Mecanica extends javax.swing.JFrame {
         competencias1 = new javax.swing.JButton();
         mecanicadefluidos = new javax.swing.JButton();
         profesional2 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         complementaria1 = new javax.swing.JButton();
         ingles5 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
         basicaprofesional = new javax.swing.JButton();
         materiales = new javax.swing.JButton();
         soluciones = new javax.swing.JButton();
         formulacion = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         filosofia = new javax.swing.JButton();
         humanidades = new javax.swing.JButton();
         algoritmia1 = new javax.swing.JButton();
@@ -271,6 +507,16 @@ public class Mecanica extends javax.swing.JFrame {
         formacioncomplementaria2 = new javax.swing.JButton();
         historia = new javax.swing.JButton();
         analisisestructural = new javax.swing.JButton();
+        Isem = new javax.swing.JButton();
+        IIsem = new javax.swing.JButton();
+        IIIsem = new javax.swing.JButton();
+        IVsem = new javax.swing.JButton();
+        Vsem = new javax.swing.JButton();
+        VIsem = new javax.swing.JButton();
+        VIIsem = new javax.swing.JButton();
+        VIIIsem = new javax.swing.JButton();
+        IXsem = new javax.swing.JButton();
+        Xsem = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -356,8 +602,6 @@ public class Mecanica extends javax.swing.JFrame {
 
         profesional1.setText("Electiva profesional 1");
 
-        jLabel1.setText("SEMESTRE 1");
-
         RegresarBtn.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         RegresarBtn.setText("Regresar");
         RegresarBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -366,25 +610,15 @@ public class Mecanica extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("SEMESTRE 3");
-
         sociales.setText("Electiva ciencias sociales");
 
         mecanicadesolidos.setText("Mecanica de solidos");
 
-        jLabel3.setText("SEMESTRE 2");
-
         fisicaelectrica.setText("Fisica electricidad");
-
-        jLabel4.setText("SEMESTRE 4");
 
         geologia.setText("Geologia");
 
-        jLabel5.setText("SEMESTRE 5");
-
         cienciasbasicas.setText("Electiva ciencias basicas ");
-
-        jLabel6.setText("SEMESTRE 6");
 
         quimica.setText("Quimica");
 
@@ -411,13 +645,9 @@ public class Mecanica extends javax.swing.JFrame {
 
         profesional2.setText("Electiva profesional 2");
 
-        jLabel7.setText("SEMESTRE 7");
-
         complementaria1.setText("Electiva formacion complementaria 1");
 
         ingles5.setText("Ingles 5");
-
-        jLabel8.setText("SEMESTRE 8");
 
         basicaprofesional.setText("Electiva basica profesional");
 
@@ -426,10 +656,6 @@ public class Mecanica extends javax.swing.JFrame {
         soluciones.setText("Soluciones computacionales");
 
         formulacion.setText("Formulacion y evaluacion de proyectos");
-
-        jLabel9.setText("SEMESTRE 9");
-
-        jLabel10.setText("SEMESTRE 10");
 
         filosofia.setText("Electiva filosofia");
 
@@ -459,16 +685,35 @@ public class Mecanica extends javax.swing.JFrame {
 
         analisisestructural.setText("Analisis estructural");
 
+        Isem.setText("I");
+
+        IIsem.setText("II");
+        IIsem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IIsemActionPerformed(evt);
+            }
+        });
+
+        IIIsem.setText("III");
+
+        IVsem.setText("IV");
+
+        Vsem.setText("V");
+
+        VIsem.setText("VI");
+
+        VIIsem.setText("VII");
+
+        VIIIsem.setText("VIII");
+
+        IXsem.setText("IX");
+
+        Xsem.setText("X");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(655, 655, 655)
-                .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84)
-                .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -601,46 +846,57 @@ public class Mecanica extends javax.swing.JFrame {
                                 .addGap(38, 38, 38)
                                 .addComponent(profesional1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(34, 34, 34)
-                                .addComponent(humanidades, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(67, 67, 67)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(70, 70, 70)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(65, 65, 65)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(73, 73, 73)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(58, 58, 58)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(humanidades, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(655, 655, 655)
+                .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
+                .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Isem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(IIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
+                .addComponent(IIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(IVsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(77, 77, 77)
+                .addComponent(Vsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(VIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
+                .addComponent(VIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(VIIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(IXsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(Xsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
-                .addGap(18, 18, 18)
+                    .addComponent(Isem)
+                    .addComponent(IIsem)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(IIIsem)
+                        .addComponent(IVsem)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Vsem)
+                            .addComponent(VIsem)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(VIIsem)
+                                .addComponent(VIIIsem)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(IXsem)
+                                    .addComponent(Xsem))))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(algebra, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(quimica, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -762,6 +1018,10 @@ public class Mecanica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_algebraActionPerformed
 
+    private void IIsemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IIsemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IIsemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -788,7 +1048,17 @@ public class Mecanica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton IIIsem;
+    private javax.swing.JButton IIsem;
+    private javax.swing.JButton IVsem;
+    private javax.swing.JButton IXsem;
+    private javax.swing.JButton Isem;
     private javax.swing.JButton RegresarBtn;
+    private javax.swing.JButton VIIIsem;
+    private javax.swing.JButton VIIsem;
+    private javax.swing.JButton VIsem;
+    private javax.swing.JButton Vsem;
+    private javax.swing.JButton Xsem;
     private javax.swing.JButton acueducto;
     private javax.swing.JButton administracion;
     private javax.swing.JButton algebra;
@@ -837,16 +1107,6 @@ public class Mecanica extends javax.swing.JFrame {
     private javax.swing.JButton ingles8;
     private javax.swing.JButton innovacion;
     private javax.swing.JButton introduccion;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JButton limpiarbtn;
     private javax.swing.JButton materiales;
     private javax.swing.JButton mecanicadefluidos;

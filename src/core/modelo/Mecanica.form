@@ -24,13 +24,6 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="655" pref="655" max="-2" attributes="0"/>
-              <Component id="RegresarBtn" min="-2" pref="110" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-              <Component id="limpiarbtn" min="-2" pref="110" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -173,52 +166,68 @@
                               <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
                               <Component id="humanidades" min="-2" pref="110" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                              <Component id="jLabel6" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                              <Component id="jLabel7" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                              <Component id="jLabel8" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Component id="jLabel9" min="-2" pref="79" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              <Component id="jLabel10" min="-2" pref="85" max="-2" attributes="0"/>
-                          </Group>
                       </Group>
                   </Group>
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace min="655" pref="655" max="-2" attributes="0"/>
+              <Component id="RegresarBtn" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+              <Component id="limpiarbtn" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+              <Component id="Isem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="IIsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+              <Component id="IIIsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="IVsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+              <Component id="Vsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="VIsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+              <Component id="VIIsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="VIIIsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="IXsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="Xsem" min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Isem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="IIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                      <Component id="IIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="IVsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                          <Component id="Vsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="VIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                              <Component id="VIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="VIIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                  <Component id="IXsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Xsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="algebra" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="quimica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
@@ -478,11 +487,6 @@
         <Property name="text" type="java.lang.String" value="Electiva profesional 1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 1"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="RegresarBtn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -494,11 +498,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RegresarBtnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 3"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="sociales">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electiva ciencias sociales"/>
@@ -509,19 +508,9 @@
         <Property name="text" type="java.lang.String" value="Mecanica de solidos"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 2"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="fisicaelectrica">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fisica electricidad"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 4"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="geologia">
@@ -529,19 +518,9 @@
         <Property name="text" type="java.lang.String" value="Geologia"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 5"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="cienciasbasicas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electiva ciencias basicas "/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 6"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="quimica">
@@ -597,11 +576,6 @@
         <Property name="text" type="java.lang.String" value="Electiva profesional 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 7"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="complementaria1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electiva formacion complementaria 1"/>
@@ -610,11 +584,6 @@
     <Component class="javax.swing.JButton" name="ingles5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ingles 5"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 8"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="basicaprofesional">
@@ -635,16 +604,6 @@
     <Component class="javax.swing.JButton" name="formulacion">
       <Properties>
         <Property name="text" type="java.lang.String" value="Formulacion y evaluacion de proyectos"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 9"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 10"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="filosofia">
@@ -715,6 +674,59 @@
     <Component class="javax.swing.JButton" name="analisisestructural">
       <Properties>
         <Property name="text" type="java.lang.String" value="Analisis estructural"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Isem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="I"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="IIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="II"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IIsemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="IIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="III"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="IVsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="IV"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Vsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="V"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VI"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VII"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="VIIIsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="VIII"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="IXsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="IX"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Xsem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
     </Component>
   </SubComponents>
