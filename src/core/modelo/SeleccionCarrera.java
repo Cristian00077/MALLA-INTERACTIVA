@@ -37,7 +37,7 @@ public class SeleccionCarrera extends javax.swing.JFrame {
         });
 
         seleccionarComboBox.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        seleccionarComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Ingenieria de sistemas", "Ingenieria Civil", "Ingeniera Mecánica" }));
+        seleccionarComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Ingenieria de sistemas", "Ingenieria Civil", "Ingenieria Mecánica", "Ingenieria Electrica ", "Ingenieria Electronica ", "Ingenieria Industrial " }));
         seleccionarComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seleccionarComboBoxActionPerformed(evt);
@@ -111,7 +111,15 @@ public class SeleccionCarrera extends javax.swing.JFrame {
         } else if (index == 3) {
             Mecanica mecanica = new Mecanica();
             mecanica.setVisible(true);
-            
+        } else if (index == 4){
+            Electrica electrica = new Electrica();
+            electrica.setVisible(true);
+        } else if (index == 5){
+            Electronica electronica = new Electronica();
+            electronica.setVisible(true);
+        } else if (index == 6){
+            Industrial industrial = new Industrial();
+            industrial.setVisible(true);
         }
     }//GEN-LAST:event_AceptarBtnActionPerformed
 

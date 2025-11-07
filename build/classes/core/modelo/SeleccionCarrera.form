@@ -92,11 +92,14 @@
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
+          <StringArray count="7">
             <StringItem index="0" value="Seleccione"/>
             <StringItem index="1" value="Ingenieria de sistemas"/>
             <StringItem index="2" value="Ingenieria Civil"/>
-            <StringItem index="3" value="Ingeniera Mec&#xe1;nica"/>
+            <StringItem index="3" value="Ingenieria Mec&#xe1;nica"/>
+            <StringItem index="4" value="Ingenieria Electrica "/>
+            <StringItem index="5" value="Ingenieria Electronica "/>
+            <StringItem index="6" value="Ingenieria Industrial "/>
           </StringArray>
         </Property>
       </Properties>

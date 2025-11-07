@@ -18,7 +18,7 @@ public class Civil extends javax.swing.JFrame {
         conectarListeners();
         actualizarInterfaz();
     }
-
+    
     Grafo grafo = new Grafo();
     
     private void armarGrafo(){
