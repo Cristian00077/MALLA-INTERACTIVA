@@ -25,6 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
+<<<<<<< HEAD
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="ingles8" min="-2" pref="110" max="-2" attributes="0"/>
@@ -68,6 +69,35 @@
               <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
               <Component id="Xsem" min="-2" pref="79" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+=======
+              <Component id="RegresarBtn" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+              <Component id="limpiarbtn" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="543" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <Component id="jLabel6" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              <Component id="jLabel7" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Component id="jLabel8" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+              <Component id="jLabel9" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace pref="60" max="32767" attributes="0"/>
+              <Component id="jLabel10" min="-2" pref="85" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+>>>>>>> 84a41354b134f30e4d3ebd7bc2edb203e50b84d2
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -152,12 +182,6 @@
                           <Component id="ElectivaEnergia" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="590" max="-2" attributes="0"/>
-                          <Component id="RegresarBtn" min="-2" pref="110" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                          <Component id="limpiarbtn" min="-2" pref="110" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="ingles1" min="-2" pref="110" max="-2" attributes="0"/>
@@ -205,7 +229,7 @@
                           <Component id="ElectivaFilosofia" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -213,6 +237,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
+<<<<<<< HEAD
               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="IIsem" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
@@ -242,6 +267,31 @@
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="91" max="32767" attributes="0"/>
+=======
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="550" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="limpiarbtn" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="RegresarBtn" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
+>>>>>>> 84a41354b134f30e4d3ebd7bc2edb203e50b84d2
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="algebra" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="ecuaciones" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
@@ -323,12 +373,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="RegresarBtn" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="limpiarbtn" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -677,6 +722,7 @@
         <Property name="text" type="java.lang.String" value="Electiva en Historia"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
     <Component class="javax.swing.JButton" name="IIsem">
       <Properties>
         <Property name="text" type="java.lang.String" value="II"/>
@@ -756,6 +802,57 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IXsemActionPerformed"/>
       </Events>
+=======
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 7"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 9"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 10"/>
+      </Properties>
+>>>>>>> 84a41354b134f30e4d3ebd7bc2edb203e50b84d2
     </Component>
   </SubComponents>
 </Form>

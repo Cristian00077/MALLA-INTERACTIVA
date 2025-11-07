@@ -1,0 +1,26 @@
+# Archivos compilados de Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Carpetas de NetBeans
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+nbproject/private/
+
+# Archivos de configuración local
+build.properties
+nbproject/private/
+nbproject/private/private.properties
+nbproject/private/private.xml
+build.xml~
+nbbuild/
+manifest.mf
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
