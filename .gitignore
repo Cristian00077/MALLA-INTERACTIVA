@@ -13,6 +13,7 @@ nbdist/
 nbproject/private/
 
 # Archivos de configuración local
+build.properties
 nbproject/private/
 nbproject/private/private.properties
 nbproject/private/private.xml
