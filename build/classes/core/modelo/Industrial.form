@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="1338" max="32767" attributes="0"/>
+              <EmptySpace pref="1349" max="32767" attributes="0"/>
               <Component id="jLabel10" min="-2" pref="79" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
           </Group>
@@ -719,7 +719,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
-        <Property name="text" type="java.lang.String" value="SEMESTRE 9"/>
+        <Property name="text" type="java.lang.String" value="SEMESTRE 10"/>
       </Properties>
     </Component>
   </SubComponents>
