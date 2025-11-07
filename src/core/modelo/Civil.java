@@ -244,30 +244,30 @@ public class Civil extends javax.swing.JFrame {
         ingles4 = new javax.swing.JButton();
         innovacion = new javax.swing.JButton();
         limpiarbtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         mecanicadesolidos = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         fisicaelectrica = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         geologia = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         cienciasbasicas = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         mecanicadefluidos = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         ingles5 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
         basicaprofesional = new javax.swing.JButton();
         materiales = new javax.swing.JButton();
         soluciones = new javax.swing.JButton();
         formulacion = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         hidrologia = new javax.swing.JButton();
         ingles6 = new javax.swing.JButton();
         historia = new javax.swing.JButton();
         analisisestructural = new javax.swing.JButton();
+        IVsem = new javax.swing.JButton();
+        Vsem = new javax.swing.JButton();
+        VIsem = new javax.swing.JButton();
+        VIIsem = new javax.swing.JButton();
+        VIIIsem = new javax.swing.JButton();
+        IXsem = new javax.swing.JButton();
+        Isem = new javax.swing.JButton();
+        IIsem = new javax.swing.JButton();
+        IIIsem = new javax.swing.JButton();
+        Xsem = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -408,33 +408,17 @@ public class Civil extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("SEMESTRE 1");
-
-        jLabel2.setText("SEMESTRE 3");
-
         mecanicadesolidos.setText("Mecanica de solidos");
-
-        jLabel3.setText("SEMESTRE 2");
 
         fisicaelectrica.setText("Fisica electricidad");
 
-        jLabel4.setText("SEMESTRE 4");
-
         geologia.setText("Geologia");
-
-        jLabel5.setText("SEMESTRE 5");
 
         cienciasbasicas.setText("Electiva ciencias basicas ");
 
-        jLabel6.setText("SEMESTRE 6");
-
         mecanicadefluidos.setText("Mecanica de fluidos");
 
-        jLabel7.setText("SEMESTRE 7");
-
         ingles5.setText("Ingles 5");
-
-        jLabel8.setText("SEMESTRE 8");
 
         basicaprofesional.setText("Electiva basica profesional");
 
@@ -444,10 +428,6 @@ public class Civil extends javax.swing.JFrame {
 
         formulacion.setText("Formulacion y evaluacion de proyectos");
 
-        jLabel9.setText("SEMESTRE 9");
-
-        jLabel10.setText("SEMESTRE 10");
-
         hidrologia.setText("Hidrologia");
 
         ingles6.setText("Ingles 6");
@@ -456,16 +436,35 @@ public class Civil extends javax.swing.JFrame {
 
         analisisestructural.setText("Analisis estructural");
 
+        IVsem.setText("IV");
+
+        Vsem.setText("V");
+
+        VIsem.setText("VI");
+
+        VIIsem.setText("VII");
+
+        VIIIsem.setText("VIII");
+
+        IXsem.setText("IX");
+
+        Isem.setText("I");
+
+        IIsem.setText("II");
+        IIsem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IIsemActionPerformed(evt);
+            }
+        });
+
+        IIIsem.setText("III");
+
+        Xsem.setText("X");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(655, 655, 655)
-                .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84)
-                .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -598,45 +597,55 @@ public class Civil extends javax.swing.JFrame {
                                 .addGap(38, 38, 38)
                                 .addComponent(profesional1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(34, 34, 34)
-                                .addComponent(humanidades, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(67, 67, 67)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(70, 70, 70)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(65, 65, 65)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(73, 73, 73)
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(58, 58, 58)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(humanidades, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(0, 23, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(655, 655, 655)
+                .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
+                .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(86, 86, 86)
+                .addComponent(Isem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(76, 76, 76)
+                .addComponent(IIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73)
+                .addComponent(IIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addComponent(IVsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(77, 77, 77)
+                .addComponent(Vsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(VIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addComponent(VIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(73, 73, 73)
+                .addComponent(VIIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(74, 74, 74)
+                .addComponent(IXsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Xsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(VIIIsem)
+                        .addComponent(IXsem)
+                        .addComponent(Xsem))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Vsem)
+                        .addComponent(VIsem)
+                        .addComponent(VIIsem))
+                    .addComponent(IVsem)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Isem)
+                        .addComponent(IIsem)
+                        .addComponent(IIIsem)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(algebra, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -759,6 +768,10 @@ public class Civil extends javax.swing.JFrame {
         actualizarInterfaz();
     }//GEN-LAST:event_limpiarbtnActionPerformed
 
+    private void IIsemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IIsemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IIsemActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -782,7 +795,17 @@ public class Civil extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton IIIsem;
+    private javax.swing.JButton IIsem;
+    private javax.swing.JButton IVsem;
+    private javax.swing.JButton IXsem;
+    private javax.swing.JButton Isem;
     private javax.swing.JButton RegresarBtn;
+    private javax.swing.JButton VIIIsem;
+    private javax.swing.JButton VIIsem;
+    private javax.swing.JButton VIsem;
+    private javax.swing.JButton Vsem;
+    private javax.swing.JButton Xsem;
     private javax.swing.JButton acueducto;
     private javax.swing.JButton administracion;
     private javax.swing.JButton algebra;
@@ -831,16 +854,6 @@ public class Civil extends javax.swing.JFrame {
     private javax.swing.JButton ingles8;
     private javax.swing.JButton innovacion;
     private javax.swing.JButton introduccion;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JButton limpiarbtn;
     private javax.swing.JButton materiales;
     private javax.swing.JButton mecanicadefluidos;
