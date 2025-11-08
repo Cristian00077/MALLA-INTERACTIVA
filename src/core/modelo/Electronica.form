@@ -75,7 +75,7 @@
                                                   <Group type="102" attributes="0">
                                                       <Component id="ingles8" min="-2" pref="110" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                                      <Component id="seminario3" min="-2" pref="110" max="-2" attributes="0"/>
+                                                      <Component id="seminario2" min="-2" pref="110" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" attributes="0">
                                                       <Component id="gestion" min="-2" pref="110" max="-2" attributes="0"/>
@@ -104,9 +104,9 @@
                                       <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
                                       <Component id="maquinaselectricas1" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                                      <Component id="instelectricas" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="electronica3" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                                      <Component id="analsistdepot" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Component id="diseñoelectronico" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                                       <Component id="profesional2" min="-2" pref="110" max="-2" attributes="0"/>
                                   </Group>
@@ -266,8 +266,8 @@
                           <Component id="teoria" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Component id="electronica1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Component id="maquinaselectricas1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                          <Component id="instelectricas" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                          <Component id="analsistdepot" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="electronica3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="diseñoelectronico" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Component id="profesional2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
@@ -335,7 +335,7 @@
                   <Component id="ingles6" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="ingles7" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="ingles8" min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="seminario3" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="seminario2" min="-2" pref="55" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -378,12 +378,12 @@
         <Property name="text" type="java.lang.String" value="Fisica calor ondas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="analsistdepot">
+    <Component class="javax.swing.JButton" name="dise&#xf1;oelectronico">
       <Properties>
         <Property name="text" type="java.lang.String" value="dise&#xf1;oelectronico"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="analsistdepotActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dise&#xf1;oelectronicoActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="calculo1">
@@ -444,12 +444,12 @@
         <Property name="text" type="java.lang.String" value="Ingles 7"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="instelectricas">
+    <Component class="javax.swing.JButton" name="electronica3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electronica 3"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="instelectricasActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="electronica3ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="medicion">
@@ -741,7 +741,7 @@
         <Property name="text" type="java.lang.String" value="Electiva formacion complementaria 2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="seminario3">
+    <Component class="javax.swing.JButton" name="seminario2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Seminario de carrera 2"/>
       </Properties>

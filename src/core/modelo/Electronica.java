@@ -27,78 +27,78 @@ public class Electronica extends javax.swing.JFrame {
     
     private void armarGrafo(){
         // Semestre 1
-        grafo.registrar("Algebra Lineal", null, 3);
-        grafo.registrar("Calculo 1", null, 5);
-        grafo.registrar("Expresion Grafica", null, 3);
-        grafo.registrar("Intro Ing. Electronica", null, 1);
-        grafo.registrar("Comp. Comunicat. 1", null, 3);
-        grafo.registrar("Ingles 1", null, 0);
+        grafo.registrar("Algebra Lineal", algebra, 3);
+        grafo.registrar("Calculo 1", calculo1, 5);
+        grafo.registrar("Expresion Grafica", expresion, 3);
+        grafo.registrar("Intro Ing. Electronica", introduccion, 1);
+        grafo.registrar("Comp. Comunicat. 1", competencias1, 3);
+        grafo.registrar("Ingles 1", ingles1, 0);
 
         // Semestre 2
-        grafo.registrar("Calculo 2", null, 4);
-        grafo.registrar("Fisica mecanica", null, 4);
-        grafo.registrar("Algoritm. y Progr. 1", null, 3);
-        grafo.registrar("Comp. Comunicat. 2", null, 3);
-        grafo.registrar("Ciencias de la Vida", null, 3);
-        grafo.registrar("Ciencias Sociales", null, 3);
-        grafo.registrar("Ingles 2", null, 0);
+        grafo.registrar("Calculo 2", calculo2, 4);
+        grafo.registrar("Fisica mecanica", fisicamecanica, 4);
+        grafo.registrar("Algoritm. y Progr. 1", algoritmia1, 3);
+        grafo.registrar("Comp. Comunicat. 2", competencias2, 3);
+        grafo.registrar("Ciencias de la Vida", cienciasvida, 3);
+        grafo.registrar("Ingles 2", ingles2, 0);
 
         // Semestre 3
-        grafo.registrar("Calculo 3", null, 4);
-        grafo.registrar("Ecuaci. Diferenciales", null, 3);
-        grafo.registrar("Fisica electricidad", null, 4);
-        grafo.registrar("Estudios del Caribe", null, 3);
-        grafo.registrar("Historia", null, 3);
-        grafo.registrar("Ingles 3", null, 0);
+        grafo.registrar("Calculo 3", calculo3, 4);
+        grafo.registrar("Ecuaci. Diferenciales", ecuaciones, 3);
+        grafo.registrar("Fisica electricidad", fisicaelectricaa, 4);
+        grafo.registrar("Estudios del Caribe", estudioscaribe, 3);
+        grafo.registrar("Ciencias Sociales", socialess, 3);
+        grafo.registrar("Ingles 3", ingles3, 0);
 
         // Semestre 4
-        grafo.registrar("Teoria Electromag.", null, 3);
-        grafo.registrar("Fisica calor ondas", null, 4);
-        grafo.registrar("Sol. Comp. Prob. Ing.", null, 3);
-        grafo.registrar("Circuitos 1", null, 3);
-        grafo.registrar("Basica Profesional", null, 3);
-        grafo.registrar("Ingles 4", null, 0);
-        grafo.registrar("Seminario de Carrera 1", null, 0);
+        grafo.registrar("Teoria Electromag.", teoria, 3);
+        grafo.registrar("Fisica calor ondas", fisicacalor, 4);
+        grafo.registrar("Sol. Comp. Prob. Ing.", solucioness, 3);
+        grafo.registrar("Circuitos 1", circuitos1, 3);
+        grafo.registrar("Historia", historia, 3);
+        grafo.registrar("Ingles 4", ingles4, 0);
+        grafo.registrar("Seminario de Carrera 1", seminario1, 0);
 
         // Semestre 5
-        grafo.registrar("Analisis Datos Ing.", null, 4);
-        grafo.registrar("Circuitos 2", null, 4);
-        grafo.registrar("Electronica 1", null, 4);
-        grafo.registrar("Señales y Sistemas", null, 4);
-        grafo.registrar("Ingles 5", null, 0);
-        grafo.registrar("Ex. Comprehensivo 1", null, 0);
+        grafo.registrar("Analisis Datos Ing.", analisisdatos, 4);
+        grafo.registrar("Circuitos 2", circuitos2, 4);
+        grafo.registrar("Electronica 1", electronica1, 4);
+        grafo.registrar("Basica Profesional", basicaprofesional1, 3);
+        grafo.registrar("Ingles 5", ingles5, 0);
+        grafo.registrar("Ex. Comprehensivo 1", examencom1, 0);
 
         // Semestre 6
-        grafo.registrar("Medios de Transm.", null, 3);
-        grafo.registrar("Maquinas Electricas 1", null, 4);
-        grafo.registrar("Logica Digital", null, 3);
-        grafo.registrar("Electronica 2", null, 3);
-        grafo.registrar("Ingles 6", null, 0);
+        grafo.registrar("Medios de Transm.", mediosdetransm, 3);
+        grafo.registrar("Maquinas Electricas 1", maquinaselectricas1, 4);
+        grafo.registrar("Logica Digital", logicadigital, 3);
+        grafo.registrar("Electronica 2", electronica2, 3);
+        grafo.registrar("Señales y Sistemas", señales, 4);
+        grafo.registrar("Ingles 6", ingles6, 0);
 
         // Semestre 7
-        grafo.registrar("Comunicaciones", null, 4);
-        grafo.registrar("Medicion. e Instrum.", null, 3);
-        grafo.registrar("Electronica 3", null, 3);
-        grafo.registrar("Microprocesadores", null, 3);
-        grafo.registrar("Etica", null, 3);
-        grafo.registrar("Ingles 7", null, 0);
+        grafo.registrar("Comunicaciones", comunicaciones, 4);
+        grafo.registrar("Medicion. e Instrum.", medicion, 3);
+        grafo.registrar("Electronica 3", electronica3, 3);
+        grafo.registrar("Microprocesadores", microprocesadores, 3);
+        grafo.registrar("Etica", etica, 3);
+        grafo.registrar("Ingles 7", ingles7, 0);
 
         // Semestre 8
-        grafo.registrar("Telematica", null, 3);
-        grafo.registrar("Control Automatico", null, 4);
-        grafo.registrar("Diseño Electronico", null, 2);
-        grafo.registrar("Microcontroladores", null, 3);
-        grafo.registrar("Electiva gestion", null, 3);
-        grafo.registrar("Ingles 8", null, 0);
+        grafo.registrar("Telematica", telematica, 3);
+        grafo.registrar("Control Automatico", controlautomatico, 4);
+        grafo.registrar("Diseño Electronico", diseñoelectronico, 2);
+        grafo.registrar("Microcontroladores", microcontroladores, 3);
+        grafo.registrar("Electiva gestion", gestion, 3);
+        grafo.registrar("Ingles 8", ingles8, 0);
 
         // Semestre 9
-        grafo.registrar("Complem. Libre I", null, 3);
-        grafo.registrar("Profesional 1", null, 3);
-        grafo.registrar("Profesional 2", null, 3);
-        grafo.registrar("Innov. Desar. Socie.", null, 3);
-        grafo.registrar("Filosofia", null, 3);
-        grafo.registrar("Seminario de Carrera 2", null, 0);
-        grafo.registrar("Ex. Comprehensivo 2", null, 0);
+        grafo.registrar("Complem. Libre 1", complementaria1, 3);
+        grafo.registrar("Profesional 1", profesional1, 3);
+        grafo.registrar("Profesional 2", profesional2, 3);
+        grafo.registrar("Innov. Desar. Socie.", innovacion, 3);
+        grafo.registrar("Filosofia", filosofia, 3);
+        grafo.registrar("Seminario de Carrera 2", seminario2, 0);
+        grafo.registrar("Ex. Comprehensivo 2", examencom2, 0);
         
         // Semestre 10
         grafo.registrar("Proyecto Final", proyectofinal, 3);
@@ -219,7 +219,7 @@ public class Electronica extends javax.swing.JFrame {
         IIIsem = new javax.swing.JButton();
         ingles1 = new javax.swing.JButton();
         fisicacalor = new javax.swing.JButton();
-        analsistdepot = new javax.swing.JButton();
+        diseñoelectronico = new javax.swing.JButton();
         calculo1 = new javax.swing.JButton();
         telematica = new javax.swing.JButton();
         introduccion = new javax.swing.JButton();
@@ -231,7 +231,7 @@ public class Electronica extends javax.swing.JFrame {
         solucioness = new javax.swing.JButton();
         etica = new javax.swing.JButton();
         ingles7 = new javax.swing.JButton();
-        instelectricas = new javax.swing.JButton();
+        electronica3 = new javax.swing.JButton();
         medicion = new javax.swing.JButton();
         historia = new javax.swing.JButton();
         ingles4 = new javax.swing.JButton();
@@ -285,7 +285,7 @@ public class Electronica extends javax.swing.JFrame {
         profesional3 = new javax.swing.JButton();
         proyectofinal = new javax.swing.JButton();
         complementaria2 = new javax.swing.JButton();
-        seminario3 = new javax.swing.JButton();
+        seminario2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -299,10 +299,10 @@ public class Electronica extends javax.swing.JFrame {
 
         fisicacalor.setText("Fisica calor ondas");
 
-        analsistdepot.setText("diseñoelectronico");
-        analsistdepot.addActionListener(new java.awt.event.ActionListener() {
+        diseñoelectronico.setText("diseñoelectronico");
+        diseñoelectronico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                analsistdepotActionPerformed(evt);
+                diseñoelectronicoActionPerformed(evt);
             }
         });
 
@@ -333,10 +333,10 @@ public class Electronica extends javax.swing.JFrame {
 
         ingles7.setText("Ingles 7");
 
-        instelectricas.setText("Electronica 3");
-        instelectricas.addActionListener(new java.awt.event.ActionListener() {
+        electronica3.setText("Electronica 3");
+        electronica3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                instelectricasActionPerformed(evt);
+                electronica3ActionPerformed(evt);
             }
         });
 
@@ -478,7 +478,7 @@ public class Electronica extends javax.swing.JFrame {
 
         complementaria2.setText("Electiva formacion complementaria 2");
 
-        seminario3.setText("Seminario de carrera 2");
+        seminario2.setText("Seminario de carrera 2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -532,7 +532,7 @@ public class Electronica extends javax.swing.JFrame {
                                                     .addGroup(layout.createSequentialGroup()
                                                         .addComponent(ingles8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGap(38, 38, 38)
-                                                        .addComponent(seminario3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(seminario2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addGroup(layout.createSequentialGroup()
                                                         .addComponent(gestion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGap(38, 38, 38)
@@ -553,9 +553,9 @@ public class Electronica extends javax.swing.JFrame {
                                         .addGap(35, 35, 35)
                                         .addComponent(maquinaselectricas1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(36, 36, 36)
-                                        .addComponent(instelectricas, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(electronica3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(37, 37, 37)
-                                        .addComponent(analsistdepot, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(diseñoelectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(38, 38, 38)
                                         .addComponent(profesional2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
@@ -690,8 +690,8 @@ public class Electronica extends javax.swing.JFrame {
                             .addComponent(teoria, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(electronica1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(maquinaselectricas1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(instelectricas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(analsistdepot, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(electronica3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(diseñoelectronico, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(profesional2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -749,7 +749,7 @@ public class Electronica extends javax.swing.JFrame {
                     .addComponent(ingles6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ingles7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ingles8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(seminario3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(seminario2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(seminario1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -764,17 +764,17 @@ public class Electronica extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void analsistdepotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_analsistdepotActionPerformed
+    private void diseñoelectronicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diseñoelectronicoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_analsistdepotActionPerformed
+    }//GEN-LAST:event_diseñoelectronicoActionPerformed
 
     private void telematicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telematicaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_telematicaActionPerformed
 
-    private void instelectricasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instelectricasActionPerformed
+    private void electronica3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_electronica3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_instelectricasActionPerformed
+    }//GEN-LAST:event_electronica3ActionPerformed
 
     private void RegresarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegresarBtnActionPerformed
         SeleccionCarrera frameseleccion = new SeleccionCarrera();
@@ -843,7 +843,6 @@ public class Electronica extends javax.swing.JFrame {
     private javax.swing.JButton algebra;
     private javax.swing.JButton algoritmia1;
     private javax.swing.JButton analisisdatos;
-    private javax.swing.JButton analsistdepot;
     private javax.swing.JButton basicaprofesional1;
     private javax.swing.JButton calculo1;
     private javax.swing.JButton calculo2;
@@ -857,9 +856,11 @@ public class Electronica extends javax.swing.JFrame {
     private javax.swing.JButton complementaria2;
     private javax.swing.JButton comunicaciones;
     private javax.swing.JButton controlautomatico;
+    private javax.swing.JButton diseñoelectronico;
     private javax.swing.JButton ecuaciones;
     private javax.swing.JButton electronica1;
     private javax.swing.JButton electronica2;
+    private javax.swing.JButton electronica3;
     private javax.swing.JButton estudioscaribe;
     private javax.swing.JButton etica;
     private javax.swing.JButton examencom1;
@@ -881,7 +882,6 @@ public class Electronica extends javax.swing.JFrame {
     private javax.swing.JButton ingles7;
     private javax.swing.JButton ingles8;
     private javax.swing.JButton innovacion;
-    private javax.swing.JButton instelectricas;
     private javax.swing.JButton introduccion;
     private javax.swing.JButton limpiarbtn;
     private javax.swing.JButton logicadigital;
@@ -895,7 +895,7 @@ public class Electronica extends javax.swing.JFrame {
     private javax.swing.JButton profesional3;
     private javax.swing.JButton proyectofinal;
     private javax.swing.JButton seminario1;
-    private javax.swing.JButton seminario3;
+    private javax.swing.JButton seminario2;
     private javax.swing.JButton señales;
     private javax.swing.JButton socialess;
     private javax.swing.JButton solucioness;
