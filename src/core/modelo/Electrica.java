@@ -2,16 +2,14 @@
 package core.modelo;
 
 import core.persistencia.Estado;
-import static core.persistencia.Estado.APROBADA;
-import static core.persistencia.Estado.BLOQUEADA;
-import static core.persistencia.Estado.DISPONIBLE;
-import core.persistencia.Grafo;
-import core.persistencia.Nodo;
+import core.persistencia.*;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 public class Electrica extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Electrica.class.getName());
+    private Map<Integer, List<Nodo>> materiasPorSemestre = new HashMap<>();
 
     public Electrica() {
         initComponents();
@@ -20,6 +18,8 @@ public class Electrica extends javax.swing.JFrame {
         inicializarEstados();
         conectarListeners();
         actualizarInterfaz();
+        agruparPorSemestre();
+        conectarBotonesSemestre();
     }
     
     private Grafo grafo = new Grafo();
@@ -45,7 +45,7 @@ public class Electrica extends javax.swing.JFrame {
         grafo.registrar("Ecuaciones", ecuaciones, 3);
         grafo.registrar("Calculo 3", calculo3, 4);
         grafo.registrar("Fisica electricidad", fisicaelectricaa, 4);
-        grafo.registrar("Etica", eticaa, 3);
+        grafo.registrar("Historia", historia, 3);
         grafo.registrar("Sociales", socialess, 3);
         grafo.registrar("Ingles 3", ingles3, 0);
 
@@ -53,7 +53,7 @@ public class Electrica extends javax.swing.JFrame {
         grafo.registrar("Circuitos 1", circuitos1, 3);
         grafo.registrar("Fisica calor ondas", fisicacalor, 4);
         grafo.registrar("Teoria Electromagnetica", teoria, 3);
-        grafo.registrar("Analisis Datos Ing ", analisisdatos, 4);
+        grafo.registrar("Analisis Datos Ing", analisisdatos, 4);
         grafo.registrar("Estudios del Caribe", estudiosdelcaribe, 3);
         grafo.registrar("Ingles 4", ingles4, 0);
         grafo.registrar("Seminario de Carrera 1", seminario1, 0);
@@ -72,7 +72,7 @@ public class Electrica extends javax.swing.JFrame {
         grafo.registrar("Maquinas Electricas 1", maquinaselectricas1, 4);
         grafo.registrar("Medicion e Instrum.", medicion, 3);
         grafo.registrar("Señales y sistemas", señales, 4);
-        grafo.registrar("Etica", eticaa, 3);
+        grafo.registrar("Etica", etica, 3);
         grafo.registrar("Ingles 6", ingles6, 0);
 
         // Semestre 7
@@ -159,6 +159,125 @@ public class Electrica extends javax.swing.JFrame {
         grafo.prereq("Proyecto final", "Ingles 8");
     }
     
+    private void agruparPorSemestre() {
+        materiasPorSemestre.put(1, Arrays.asList(
+                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Calculo 1"),
+                grafo.getNodo("Expresion Grafica"),
+                grafo.getNodo("Intro Ingenieria Electrica"),
+                grafo.getNodo("Competencias comunicativas 1"),
+                grafo.getNodo("Ingles 1")
+        ));
+
+        materiasPorSemestre.put(2, Arrays.asList(
+                grafo.getNodo("Calculo 2"),
+                grafo.getNodo("Fisica mecanica"),
+                grafo.getNodo("Algoritmia 1"),
+                grafo.getNodo("Competencias comunicativas 2"),
+                grafo.getNodo("Ciencias de la Vida"),
+                grafo.getNodo("Ingles 2")
+        ));
+
+        materiasPorSemestre.put(3, Arrays.asList(
+                grafo.getNodo("Ecuaciones"),
+                grafo.getNodo("Calculo 3"),
+                grafo.getNodo("Fisica electricidad"),
+                grafo.getNodo("Historia"),
+                grafo.getNodo("Sociales"),
+                grafo.getNodo("Ingles 3")
+        ));
+
+        materiasPorSemestre.put(4, Arrays.asList(
+                grafo.getNodo("Circuitos 1"),
+                grafo.getNodo("Fisica calor ondas"),
+                grafo.getNodo("Teoria Electromagnetica"),
+                grafo.getNodo("Analisis Datos Ing"),
+                grafo.getNodo("Estudios del Caribe"),
+                grafo.getNodo("Ingles 4"),
+                grafo.getNodo("Seminario de Carrera 1")
+        ));
+
+        materiasPorSemestre.put(5, Arrays.asList(
+                grafo.getNodo("Circuitos 2"),
+                grafo.getNodo("Electronica 1"),
+                grafo.getNodo("Sol. Comp. Prob. Ing"),
+                grafo.getNodo("Termodinamica 1"),
+                grafo.getNodo("Electiva basica profesional"),
+                grafo.getNodo("Examen Comprehensivo 1"),
+                grafo.getNodo("Ingles 5")
+        ));
+        
+        materiasPorSemestre.put(6, Arrays.asList(
+                grafo.getNodo("Logica Digital"),
+                grafo.getNodo("Maquinas Electricas 1"),
+                grafo.getNodo("Medicion e Instrum."),
+                grafo.getNodo("Señales y sistemas"),
+                grafo.getNodo("Etica"),
+                grafo.getNodo("Ingles 6")
+        ));
+
+        materiasPorSemestre.put(7, Arrays.asList(
+                grafo.getNodo("Maquinas Electricas 2"),
+                grafo.getNodo("Inst. Electricas"),
+                grafo.getNodo("Elem. de Sis. y Prot."),
+                grafo.getNodo("Control Automatico"),
+                grafo.getNodo("Filosofia"),
+                grafo.getNodo("Ingles 7")
+        ));
+        
+        materiasPorSemestre.put(8, Arrays.asList(
+                grafo.getNodo("Protec. Electricas"),
+                grafo.getNodo("Anal. Sist. de Pot."),
+                grafo.getNodo("Subes. Electricas"),
+                grafo.getNodo("Lin. y Red. de Trans."),
+                grafo.getNodo("Gestion"),
+                grafo.getNodo("Ingles 8")
+        ));
+
+        materiasPorSemestre.put(9, Arrays.asList(
+                grafo.getNodo("Examen Comprehensivo 2"),
+                grafo.getNodo("Profesional 1"),
+                grafo.getNodo("Profesional 2"),
+                grafo.getNodo("Complem. Libre 1"),
+                grafo.getNodo("Innov. Desar. Socie."),
+                grafo.getNodo("Seminario de Carrera 2")
+        ));
+        
+        materiasPorSemestre.put(10, Arrays.asList(
+                grafo.getNodo("Proyecto Final"),
+                grafo.getNodo("Complem. Libre 2"),
+                grafo.getNodo("Profesional 3"),
+                grafo.getNodo("Humanidades")
+        ));
+    }
+
+    private void seleccionarSemestre(int numero) {
+        List<Nodo> materias = materiasPorSemestre.get(numero);
+        if (materias == null) {
+            return;
+        }
+
+        for (Nodo n : materias) {
+            if (n.getEstado() != Estado.APROBADA) {
+                grafo.aprobarNodo(n); // Marca la materia como aprobada
+            }
+        }
+        actualizarInterfaz();
+    }
+
+    private void conectarBotonesSemestre() {
+        Isem.addActionListener(e -> seleccionarSemestre(1));
+        IIsem.addActionListener(e -> seleccionarSemestre(2));
+        IIIsem.addActionListener(e -> seleccionarSemestre(3));
+        IVsem.addActionListener(e -> seleccionarSemestre(4));
+        Vsem.addActionListener(e -> seleccionarSemestre(5));
+        VIsem.addActionListener(e -> seleccionarSemestre(6));
+        VIIsem.addActionListener(e -> seleccionarSemestre(7));
+        VIIIsem.addActionListener(e -> seleccionarSemestre(8));
+        IXsem.addActionListener(e -> seleccionarSemestre(9));
+        Xsem.addActionListener(e -> seleccionarSemestre(10));
+    }
+    
     private void inicializarEstados() {
         for (Nodo nodo : grafo.getNodos().values()) {
             nodo.setEstado(nodo.getPrereqs().isEmpty() ? Estado.DISPONIBLE : Estado.BLOQUEADA);
@@ -227,7 +346,7 @@ public class Electrica extends javax.swing.JFrame {
         fisicaelectricaa = new javax.swing.JButton();
         examencom1 = new javax.swing.JButton();
         señales = new javax.swing.JButton();
-        historiaa = new javax.swing.JButton();
+        historia = new javax.swing.JButton();
         maquinaselectricas2 = new javax.swing.JButton();
         analisisdatos = new javax.swing.JButton();
         filosofiaa = new javax.swing.JButton();
@@ -268,7 +387,7 @@ public class Electrica extends javax.swing.JFrame {
         soluciones = new javax.swing.JButton();
         logicadigital = new javax.swing.JButton();
         algebra = new javax.swing.JButton();
-        eticaa = new javax.swing.JButton();
+        etica = new javax.swing.JButton();
         competencias1 = new javax.swing.JButton();
         ingles6 = new javax.swing.JButton();
         profesional2 = new javax.swing.JButton();
@@ -316,7 +435,7 @@ public class Electrica extends javax.swing.JFrame {
 
         señales.setText("Señales y sistemas");
 
-        historiaa.setText("Electiva historia");
+        historia.setText("Electiva historia");
 
         maquinaselectricas2.setText("Maquinas electricas 2");
 
@@ -440,7 +559,7 @@ public class Electrica extends javax.swing.JFrame {
             }
         });
 
-        eticaa.setText("Electiva etica");
+        etica.setText("Electiva etica");
 
         competencias1.setText("Competencias comunicativas 1");
 
@@ -581,7 +700,7 @@ public class Electrica extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(algoritmia1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)
-                        .addComponent(historiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(historia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38)
                         .addComponent(circuitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37)
@@ -607,7 +726,7 @@ public class Electrica extends javax.swing.JFrame {
                             .addGap(37, 37, 37)
                             .addComponent(basicaprofesional1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(35, 35, 35)
-                            .addComponent(eticaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(etica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(36, 36, 36)
                             .addComponent(filosofiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(37, 37, 37)
@@ -696,7 +815,7 @@ public class Electrica extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(expresion, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(algoritmia1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(historiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(historia, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(circuitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(soluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(señales, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -712,7 +831,7 @@ public class Electrica extends javax.swing.JFrame {
                     .addComponent(socialess, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(estudiosdelcaribe, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(basicaprofesional1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(eticaa, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(etica, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(filosofiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(gestion, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(examencom2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -840,7 +959,7 @@ public class Electrica extends javax.swing.JFrame {
     private javax.swing.JButton electronica1;
     private javax.swing.JButton elemdesis;
     private javax.swing.JButton estudiosdelcaribe;
-    private javax.swing.JButton eticaa;
+    private javax.swing.JButton etica;
     private javax.swing.JButton examencom1;
     private javax.swing.JButton examencom2;
     private javax.swing.JButton expresion;
@@ -849,7 +968,7 @@ public class Electrica extends javax.swing.JFrame {
     private javax.swing.JButton fisicaelectricaa;
     private javax.swing.JButton fisicamecanica;
     private javax.swing.JButton gestion;
-    private javax.swing.JButton historiaa;
+    private javax.swing.JButton historia;
     private javax.swing.JButton humanidades;
     private javax.swing.JButton ingles1;
     private javax.swing.JButton ingles2;

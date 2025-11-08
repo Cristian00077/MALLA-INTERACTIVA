@@ -1,15 +1,8 @@
 package core.modelo;
 
 import core.persistencia.Estado;
-import static core.persistencia.Estado.APROBADA;
-import static core.persistencia.Estado.BLOQUEADA;
-import static core.persistencia.Estado.DISPONIBLE;
-import core.persistencia.Grafo;
-import core.persistencia.Nodo;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import core.persistencia.*;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 public class Mecanica extends javax.swing.JFrame {
@@ -56,18 +49,18 @@ public class Mecanica extends javax.swing.JFrame {
 
         // Semestre 4
         grafo.registrar("Fisica electricidad", null, 4);
-        grafo.registrar("Termodinamica 1", null, 4);
-        grafo.registrar("Ingenieria de materiales", null, 3);
+        grafo.registrar("Termodinamica 1", null, 3);
+        grafo.registrar("Ingenieria de materiales", null, 2);
         grafo.registrar("Dinamica", null, 3);
-        grafo.registrar("Mecanica de Solidos", null, 4);
+        grafo.registrar("Mecanica de Solidos", null, 3);
         grafo.registrar("Seminario de Carrera 1", null, 0);
         grafo.registrar("Ingles 4", null, 0);
 
         // Semestre 5
-        grafo.registrar("Termodinamica 2", null, 3);
+        grafo.registrar("Termodinamica 2", null, 4);
         grafo.registrar("Soln. Comput. de Problem. Ing.", null, 3);
         grafo.registrar("Mecanica de Fluidos", null, 4);
-        grafo.registrar("Mecanica de Maquinas", null, 4);
+        grafo.registrar("Mecanica de Maquinas", null, 3);
         grafo.registrar("Procesos de Fabricacion", null, 3);
         grafo.registrar("Examen Comprehensivo 1", null, 0);
         grafo.registrar("Ingles 5", null, 0);
@@ -83,14 +76,14 @@ public class Mecanica extends javax.swing.JFrame {
         grafo.registrar("Electiva Sistemas Electricos", null, 3);
         grafo.registrar("Modelos de Sistemas Dinamicos", null, 3);
         grafo.registrar("Diseño de Sistemas Termofluidos", null, 3);
-        grafo.registrar("Diseño de Sistemas Mecanicos", null, 4);
+        grafo.registrar("Diseño de Sistemas Mecanicos", null, 3);
         grafo.registrar("Electiva en Etica", null, 3);
         grafo.registrar("Ingles 7", null, 0);
 
         // semestre 8
         grafo.registrar("Electiva Ciencias de la vida", null, 3);
         grafo.registrar("Proyecto de Investigacion", null, 2);
-        grafo.registrar("Instrumentacion y Control", null, 3);
+        grafo.registrar("Instrumentacion y Control", null, 4);
         grafo.registrar("Gestion de Activos", null, 2);
         grafo.registrar("Electiva en Filosofia", null, 3);
         grafo.registrar("Electiva Innov y Dllo Soc", null, 3);
@@ -176,147 +169,99 @@ public class Mecanica extends javax.swing.JFrame {
         grafo.prereq("Proyecto final", "Diseño Sistema Termo");
         grafo.prereq("Proyecto final", "Instrumentacion Control");
         grafo.prereq("Proyecto final", "Ingles 8");*/
-        grafo.prereq("Calculo 2", "Calculo 1");
-        grafo.prereq("Fisica mecanica", "Calculo 1");
-        grafo.prereq("Competencias 2", "Competencias 1");
-        grafo.prereq("Calculo 3", "Algebra lineal");
-        grafo.prereq("Calculo 3", "Calculo 2");
-        grafo.prereq("Fisica calor", "Calculo 1");
-        grafo.prereq("Fisica calor", "Fisica mecanica");
-        grafo.prereq("Estatica", "Fisica mecanica");
-        grafo.prereq("Topografia", "Expresion grafica");
-        grafo.prereq("Ecuaciones", "Calculo 2");
-        grafo.prereq("Ingles 2", "Ingles 1");
-        grafo.prereq("Ingles 3", "Ingles 2");
-        grafo.prereq("Ingles 4", "Ingles 3");
-        grafo.prereq("Ingles 5", "Ingles 4");
-        grafo.prereq("Ingles 6", "Ingles 5");
-        grafo.prereq("Ingles 7", "Ingles 6");
-        grafo.prereq("Ingles 8", "Ingles 7");
-        grafo.prereq("Analisis de datos", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Fisica mecanica");
-        grafo.prereq("Mecanica de solidos", "Estatica");
-        grafo.prereq("Materiales de construccion", "Mecanica de solidos");
-        grafo.prereq("Soluciones computacionales", "Ecuaciones");
-        grafo.prereq("Soluciones computacionales", "Algoritmia 1");
-        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
-        grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
-        grafo.prereq("Examen comprehensivo 1", "Calculo 3");
-        grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
-        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
-        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
-        grafo.prereq("Analisis estructural", "Mecanica de solidos");
-        grafo.prereq("Analisis estructural", "Examen comprehensivo 1");
-        grafo.prereq("Mecanica de suelos", "Mecanica de solidos");
-        grafo.prereq("Mecanica de suelos", "Geologia");
-        grafo.prereq("Mecanica de suelos", "Examen comprehensivo 1");
-        grafo.prereq("Hidrologia", "Analisis de datos");
-        grafo.prereq("Diseño de vias", "Topografia");
-        grafo.prereq("Construccion", "Materiales de construccion");
-        grafo.prereq("Diseño estructural", "Analisis estructural");
-        grafo.prereq("Fundaciones", "Mecanica de suelos");
-        grafo.prereq("Hidraulica", "Mecanica de fluidos");
-        grafo.prereq("Ingenieria de transporte", "Diseño de vias");
-        grafo.prereq("Administracion y control de la construccion", "Construccion");
-        grafo.prereq("Acueducto y alcantarillado", "Hidraulica");
-        grafo.prereq("Proyecto final", "Ingenieria de transporte");
-        grafo.prereq("Proyecto final", "Acueducto y alcantarillado");
-        grafo.prereq("Proyecto final", "Administracion y control de la construccion");
-        grafo.prereq("Proyecto final", "Examen comprehensivo 2");
-        grafo.prereq("Proyecto final", "Ingles 8");
+        
     }
-
+    
     private void agruparPorSemestre() {
         materiasPorSemestre.put(1, Arrays.asList(
                 grafo.getNodo("Algebra lineal"),
                 grafo.getNodo("Calculo 1"),
-                grafo.getNodo("Introduccion a la ingenieria"),
-                grafo.getNodo("Expresion grafica"),
-                grafo.getNodo("Competencias 1"),
+                grafo.getNodo("Expresion Grafica"),
+                grafo.getNodo("Introduccion a la Ing Mecanica"),
+                grafo.getNodo("Competencias Comunicativas 1"),
                 grafo.getNodo("Ingles 1")
         ));
 
         materiasPorSemestre.put(2, Arrays.asList(
                 grafo.getNodo("Calculo 2"),
-                grafo.getNodo("Fisica mecanica"),
-                grafo.getNodo("Algoritmia 1"),
-                grafo.getNodo("Competencias 2"),
+                grafo.getNodo("Fisica Mecanica"),
+                grafo.getNodo("Algoritmia y Programacion 1"),
+                grafo.getNodo("Competencias Comunicativas 2"),
                 grafo.getNodo("Ingles 2")
         ));
 
         materiasPorSemestre.put(3, Arrays.asList(
                 grafo.getNodo("Calculo 3"),
-                grafo.getNodo("Fisica calor"),
+                grafo.getNodo("Ecuaciones Diferenciales"),
+                grafo.getNodo("Fisica calor ondas"),
+                grafo.getNodo("Ciencia de los Materiales"),
                 grafo.getNodo("Estatica"),
-                grafo.getNodo("CienciaMateriales"),
-                grafo.getNodo("Ecuaciones"),
                 grafo.getNodo("Ingles 3")
         ));
 
         materiasPorSemestre.put(4, Arrays.asList(
-                grafo.getNodo("Ing Materiales"),
-                grafo.getNodo("Fisica electrica"),
                 grafo.getNodo("Termodinamica 1"),
+                grafo.getNodo("Fisica electricidad"),
+                grafo.getNodo("Ingenieria de materiales"),
                 grafo.getNodo("Dinamica"),
                 grafo.getNodo("Mecanica de Solidos"),
                 grafo.getNodo("Ingles 4"),
-                grafo.getNodo("Seminario 1")
+                grafo.getNodo("Seminario de Carrera 1")
         ));
 
         materiasPorSemestre.put(5, Arrays.asList(
-                grafo.getNodo("Solucion computacionales"),
-                grafo.getNodo("Termo2"),
-                grafo.getNodo("MecanicaMaquinas"),
-                grafo.getNodo("Procesos Fabricacion"),
-                grafo.getNodo("Mecanica de fluidos"),
-                grafo.getNodo("Examen comprehensivo 1"),
+                grafo.getNodo("Soln. Comput. de Problem. Ing."),
+                grafo.getNodo("Termodinamica 2"),
+                grafo.getNodo("Mecanica de Fluidos"),
+                grafo.getNodo("Mecanica de Maquinas"),
+                grafo.getNodo("Procesos de Fabricacion"),
+                grafo.getNodo("Examen Comprehensivo 1"),
                 grafo.getNodo("Ingles 5")
         ));
 
         materiasPorSemestre.put(6, Arrays.asList(
-                grafo.getNodo("Ing. Economica"),
-                grafo.getNodo("Analisis Datos"),
-                grafo.getNodo("Transferencia de calor"),
-                grafo.getNodo("DiseñoMec"),
+                grafo.getNodo("Ingenieria Economica"),
+                grafo.getNodo("Analisis de Datos en Ingenieria"),
+                grafo.getNodo("Transferencia de Calor"),
+                grafo.getNodo("Diseño Mecanico"),
                 grafo.getNodo("Ingles 6")
         ));
 
         materiasPorSemestre.put(7, Arrays.asList(
-                grafo.getNodo("Electiva de Sistemas Electricos"),
-                grafo.getNodo("Modelo Sistemas Dinamicos"),
-                grafo.getNodo("Diseño Sistema Termo"),
-                grafo.getNodo("Diseño Sistema Mecanico"),
-                grafo.getNodo("Electiva Etica"),
+                grafo.getNodo("Electiva Sistemas Electricos"),
+                grafo.getNodo("Modelos de Sistemas Dinamicos"),
+                grafo.getNodo("Diseño de Sistemas Termofluidos"),
+                grafo.getNodo("Diseño de Sistemas Mecanicos"),
+                grafo.getNodo("Electiva en Etica"),
                 grafo.getNodo("Ingles 7")
         ));
 
         materiasPorSemestre.put(8, Arrays.asList(
-                grafo.getNodo("Electiva ciencias vida"),
-                grafo.getNodo("Proyecto de investigacion"),
-                grafo.getNodo("Instrumentacion Control"),
-                grafo.getNodo("Gestion Activos"),
-                grafo.getNodo("Electiva filosofia"),
-                grafo.getNodo("Electiva innovacion"),
+                grafo.getNodo("Electiva Ciencias de la vida"),
+                grafo.getNodo("Proyecto de Investigacion"),
+                grafo.getNodo("Instrumentacion y Control"),
+                grafo.getNodo("Gestion de Activos"),
+                grafo.getNodo("Electiva en Filosofia"),
+                grafo.getNodo("Electiva Innov y Dllo Soc"),
                 grafo.getNodo("Ingles 8")
         ));
 
         materiasPorSemestre.put(9, Arrays.asList(
-                grafo.getNodo("Electiva Energia"),
-                grafo.getNodo("Electiva Diseño Materiales"),
-                grafo.getNodo("Electiva formacion complementaria 1"),
-                grafo.getNodo("Electiva Historia"),
-                grafo.getNodo("Electiva humanidades"),
-                grafo.getNodo("Examen comprehensivo 2"),
-                grafo.getNodo("Seminario 2")
+                grafo.getNodo("Electiva Form Compl Libre 1"),
+                grafo.getNodo("Electiva en Energia"),
+                grafo.getNodo("Electiva en Diseño y Materiales"),
+                grafo.getNodo("Electiva en Humanidades"),
+                grafo.getNodo("Electiva en Historia"),
+                grafo.getNodo("Examen Comprehensivo 2"),
+                grafo.getNodo("Seminario de Carrera 2")
         ));
 
         materiasPorSemestre.put(10, Arrays.asList(
-                grafo.getNodo("Electiva Mecanica"),
-                grafo.getNodo("Proyecto final"),
-                grafo.getNodo("Electiva formacion complementaria 2"),
-                grafo.getNodo("EstudioCaribe"),
-                grafo.getNodo("Electiva sociales")
+                grafo.getNodo("Electiva Ing. Mecanica"),
+                grafo.getNodo("Proyecto Final"),
+                grafo.getNodo("El Form Compl Libre 2"),
+                grafo.getNodo("Electiva ciencias sociales"),
+                grafo.getNodo("Electiva Estudios del Caribe")
         ));
     }
 

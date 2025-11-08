@@ -1,14 +1,13 @@
 
 package core.modelo;
 import core.persistencia.*;
-import static core.persistencia.Estado.APROBADA;
-import static core.persistencia.Estado.BLOQUEADA;
-import static core.persistencia.Estado.DISPONIBLE;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 public class Civil extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Civil.class.getName());
+    private Map<Integer, List<Nodo>> materiasPorSemestre = new HashMap<>();
 
     public Civil() {
         initComponents();
@@ -17,6 +16,8 @@ public class Civil extends javax.swing.JFrame {
         inicializarEstados();
         conectarListeners();
         actualizarInterfaz();
+        agruparPorSemestre();
+        conectarBotonesSemestre();
     }
     
     Grafo grafo = new Grafo();
@@ -137,6 +138,127 @@ public class Civil extends javax.swing.JFrame {
         grafo.prereq("Proyecto final", "Administracion y control de la construccion");
         grafo.prereq("Proyecto final", "Examen comprehensivo 2");
         grafo.prereq("Proyecto final", "Ingles 8");
+    }
+    
+    private void agruparPorSemestre() {
+        materiasPorSemestre.put(1, Arrays.asList(
+                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Calculo 1"),
+                grafo.getNodo("Expresion grafica"),
+                grafo.getNodo("Introduccion a la ingenieria"),
+                grafo.getNodo("Competencias 1"),
+                grafo.getNodo("Ingles 1")
+        ));     
+        
+        materiasPorSemestre.put(2, Arrays.asList(
+                grafo.getNodo("Calculo 2"),
+                grafo.getNodo("Fisica mecanica"),
+                grafo.getNodo("Algoritmia 1"),
+                grafo.getNodo("Quimica"),
+                grafo.getNodo("Competencias 2"),
+                grafo.getNodo("Ingles 2")
+        ));
+
+        materiasPorSemestre.put(3, Arrays.asList(
+                grafo.getNodo("Calculo 3"),
+                grafo.getNodo("Ecuaciones"),
+                grafo.getNodo("Fisica calor"),
+                grafo.getNodo("Topografia"),
+                grafo.getNodo("Estatica"),
+                grafo.getNodo("Ingles 3")
+        )); 
+        
+        materiasPorSemestre.put(4, Arrays.asList(
+                grafo.getNodo("Analisis de datos"),
+                grafo.getNodo("Fisica electrica"),
+                grafo.getNodo("Mecanica de solidos"),
+                grafo.getNodo("Geologia"),
+                grafo.getNodo("Electiva estudios caribe"),
+                grafo.getNodo("Ingles 4"),
+                grafo.getNodo("Seminario 1")
+        ));
+
+        materiasPorSemestre.put(5, Arrays.asList(
+                grafo.getNodo("Electiva ciencias basicas"),
+                grafo.getNodo("Electiva basica profesional"),
+                grafo.getNodo("Materiales de construccion"),
+                grafo.getNodo("Soluciones computacionales"),
+                grafo.getNodo("Mecanica de fluidos"),
+                grafo.getNodo("Examen comprehensivo 1"),
+                grafo.getNodo("Ingles 5")
+        ));
+
+        materiasPorSemestre.put(6, Arrays.asList(
+                grafo.getNodo("Formulacion de proyectos"),
+                grafo.getNodo("Electiva historia"),
+                grafo.getNodo("Analisis estructural"),
+                grafo.getNodo("Mecanica de suelos"),
+                grafo.getNodo("Hidrologia"),
+                grafo.getNodo("Ingles 6")
+        ));
+        
+        materiasPorSemestre.put(7, Arrays.asList(
+                grafo.getNodo("Diseño de vias"),
+                grafo.getNodo("Construccion"),
+                grafo.getNodo("Diseño estructural"),
+                grafo.getNodo("Fundaciones"),
+                grafo.getNodo("Hidraulica"),
+                grafo.getNodo("Ingles 7")
+        ));
+
+        materiasPorSemestre.put(8, Arrays.asList(
+                grafo.getNodo("Ingenieria de transporte"),
+                grafo.getNodo("Administracion y control de la construccion"),
+                grafo.getNodo("Ingenieria ambiental"),
+                grafo.getNodo("Electiva etica"),
+                grafo.getNodo("Acueducto y alcantarillado"),
+                grafo.getNodo("Electiva innovacion"),
+                grafo.getNodo("Ingles 8")
+        ));
+
+        materiasPorSemestre.put(9, Arrays.asList(
+                grafo.getNodo("Electiva profesional 1"),
+                grafo.getNodo("Electiva profesional 2"),
+                grafo.getNodo("Electiva formacion complementaria 1"),
+                grafo.getNodo("Electiva filosofia"),
+                grafo.getNodo("Electiva sociales"),
+                grafo.getNodo("Examen comprehensivo 2"),
+                grafo.getNodo("Seminario 2")
+        ));
+        
+        materiasPorSemestre.put(10, Arrays.asList(
+                grafo.getNodo("Electiva humanidades"),
+                grafo.getNodo("Electiva profesional 3"),
+                grafo.getNodo("Proyecto final"),
+                grafo.getNodo("Electiva formacion complementaria 2")
+        ));
+    }
+
+    private void seleccionarSemestre(int numero) {
+        List<Nodo> materias = materiasPorSemestre.get(numero);
+        if (materias == null) {
+            return;
+        }
+
+        for (Nodo n : materias) {
+            if (n.getEstado() != Estado.APROBADA) {
+                grafo.aprobarNodo(n); // Marca la materia como aprobada
+            }
+        }
+        actualizarInterfaz();
+    }
+
+    private void conectarBotonesSemestre() {
+        Isem.addActionListener(e -> seleccionarSemestre(1));
+        IIsem.addActionListener(e -> seleccionarSemestre(2));
+        IIIsem.addActionListener(e -> seleccionarSemestre(3));
+        IVsem.addActionListener(e -> seleccionarSemestre(4));
+        Vsem.addActionListener(e -> seleccionarSemestre(5));
+        VIsem.addActionListener(e -> seleccionarSemestre(6));
+        VIIsem.addActionListener(e -> seleccionarSemestre(7));
+        VIIIsem.addActionListener(e -> seleccionarSemestre(8));
+        IXsem.addActionListener(e -> seleccionarSemestre(9));
+        Xsem.addActionListener(e -> seleccionarSemestre(10));
     }
     
     private void inicializarEstados() {

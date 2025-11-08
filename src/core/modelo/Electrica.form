@@ -129,7 +129,7 @@
                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                       <Component id="algoritmia1" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
-                      <Component id="historiaa" min="-2" pref="110" max="-2" attributes="0"/>
+                      <Component id="historia" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                       <Component id="circuitos1" min="-2" pref="110" max="-2" attributes="0"/>
                       <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
@@ -156,7 +156,7 @@
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                           <Component id="basicaprofesional1" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                          <Component id="eticaa" min="-2" pref="110" max="-2" attributes="0"/>
+                          <Component id="etica" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
                           <Component id="filosofiaa" min="-2" pref="110" max="-2" attributes="0"/>
                           <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
@@ -258,7 +258,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="expresion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="algoritmia1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="historiaa" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="historia" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="circuitos1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="soluciones" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="señales" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
@@ -276,7 +276,7 @@
                   <Component id="socialess" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="estudiosdelcaribe" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="basicaprofesional1" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
-                  <Component id="eticaa" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="etica" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="filosofiaa" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="gestion" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                   <Component id="examencom2" min="-2" pref="55" max="-2" attributes="0"/>
@@ -384,7 +384,7 @@
         <Property name="text" type="java.lang.String" value="Se&#xf1;ales y sistemas"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="historiaa">
+    <Component class="javax.swing.JButton" name="historia">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electiva historia"/>
       </Properties>
@@ -619,7 +619,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="algebraActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="eticaa">
+    <Component class="javax.swing.JButton" name="etica">
       <Properties>
         <Property name="text" type="java.lang.String" value="Electiva etica"/>
       </Properties>
