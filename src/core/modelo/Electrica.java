@@ -280,7 +280,7 @@ public class Electrica extends javax.swing.JFrame {
 
         for (Nodo n : materias) {
             if (n.getEstado() != Estado.APROBADA) {
-                grafo.aprobarNodo(n); // Marca la materia como aprobada
+                grafo.aprobarNodo(n); 
             }
         }
         actualizarInterfaz();
