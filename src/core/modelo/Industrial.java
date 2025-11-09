@@ -112,7 +112,7 @@ public class Industrial extends javax.swing.JFrame {
         grafo.prereq("Calculo 2", "Calculo 1");
         grafo.prereq("Fisica mecanica", "Calculo 1");
         grafo.prereq("Competencias 2", "Competencias 1");
-        grafo.prereq("Calculo 3", "Algebra lineal");
+        grafo.prereq("Calculo 3", "Algebra Lineal");
         grafo.prereq("Calculo 3", "Calculo 2");
         grafo.prereq("Fisica calor", "Calculo 1");
         grafo.prereq("Fisica calor", "Fisica mecanica");

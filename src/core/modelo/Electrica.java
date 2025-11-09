@@ -65,7 +65,7 @@ public class Electrica extends javax.swing.JFrame {
         grafo.registrar("Termodinamica 1", termodinamica1, 3);
         grafo.registrar("Electiva basica profesional", basicaprofesional1, 3);
         grafo.registrar("Ingles 5", ingles5, 0);
-        grafo.registrar("Examen Comprehensivo 1", examencom1, 0);
+        grafo.registrar("Examen comprehensivo 1", examencom1, 0);
 
         // Semestre 6
         grafo.registrar("Logica Digital", logicadigital, 3);
@@ -78,7 +78,7 @@ public class Electrica extends javax.swing.JFrame {
         // Semestre 7
         grafo.registrar("Maquinas Electricas 2", maquinaselectricas2, 3);
         grafo.registrar("Inst. Electricas", instelectricas, 3);
-        grafo.registrar("Elem. de Sis. y Prot.", elemdesis, 3);
+        grafo.registrar("Elem. de Sis. de Pot.", elemdesis, 3);
         grafo.registrar("Control Automatico", controlautomatico, 4);
         grafo.registrar("Filosofia", filosofiaa, 3);
         grafo.registrar("Ingles 7", ingles7, 0);
@@ -92,7 +92,7 @@ public class Electrica extends javax.swing.JFrame {
         grafo.registrar("Ingles 8", ingles8, 0);
 
         // Semestre 9
-        grafo.registrar("Examen Comprehensivo 2", examencom2, 0);
+        grafo.registrar("Examen comprehensivo 2", examencom2, 0);
         grafo.registrar("Profesional 1", profesional1, 3);
         grafo.registrar("Profesional 2", profesional2, 3);
         grafo.registrar("Complem. Libre 1", complementaria1, 3);
@@ -110,14 +110,24 @@ public class Electrica extends javax.swing.JFrame {
         //CONECTAR LAS ARISTAS
         grafo.prereq("Calculo 2", "Calculo 1");
         grafo.prereq("Fisica mecanica", "Calculo 1");
-        grafo.prereq("Competencias 2", "Competencias 1");
-        grafo.prereq("Calculo 3", "Algebra lineal");
-        grafo.prereq("Calculo 3", "Calculo 2");
-        grafo.prereq("Fisica calor", "Calculo 1");
-        grafo.prereq("Fisica calor", "Fisica mecanica");
-        grafo.prereq("Estatica", "Fisica mecanica");
-        grafo.prereq("Topografia", "Expresion grafica");
+        grafo.prereq("Competencias comunicativas 2", "Competencias comunicativas 1");
+        
+        //3
         grafo.prereq("Ecuaciones", "Calculo 2");
+        grafo.prereq("Calculo 3", "Algebra Lineal");
+        grafo.prereq("Calculo 3", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Fisica mecanica");
+        
+        //4
+        grafo.prereq("Circuitos 1", "Algebra Lineal");
+        grafo.prereq("Circuitos 1", "Fisica electricidad");
+        grafo.prereq("Fisica calor ondas", "Calculo 1");
+        grafo.prereq("Fisica calor ondas", "Fisica mecanica");
+        grafo.prereq("Teoria Electromagnetica", "Fisica electricidad");
+        grafo.prereq("Teoria Electromagnetica", "Ecuaciones");
+        grafo.prereq("Analisis Datos Ing", "Calculo 2");
+        
         grafo.prereq("Ingles 2", "Ingles 1");
         grafo.prereq("Ingles 3", "Ingles 2");
         grafo.prereq("Ingles 4", "Ingles 3");
@@ -125,43 +135,54 @@ public class Electrica extends javax.swing.JFrame {
         grafo.prereq("Ingles 6", "Ingles 5");
         grafo.prereq("Ingles 7", "Ingles 6");
         grafo.prereq("Ingles 8", "Ingles 7");
-        grafo.prereq("Analisis de datos", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Fisica mecanica");
-        grafo.prereq("Mecanica de solidos", "Estatica");
-        grafo.prereq("Materiales de construccion", "Mecanica de solidos");
-        grafo.prereq("Soluciones computacionales", "Ecuaciones");
-        grafo.prereq("Soluciones computacionales", "Algoritmia 1");
-        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
+        
+        //5
         grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
         grafo.prereq("Examen comprehensivo 1", "Calculo 3");
         grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
-        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
-        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
-        grafo.prereq("Analisis estructural", "Mecanica de solidos");
-        grafo.prereq("Analisis estructural", "Examen comprehensivo 1");
-        grafo.prereq("Mecanica de suelos", "Mecanica de solidos");
-        grafo.prereq("Mecanica de suelos", "Geologia");
-        grafo.prereq("Mecanica de suelos", "Examen comprehensivo 1");
-        grafo.prereq("Hidrologia", "Analisis de datos");
-        grafo.prereq("Diseño de vias", "Topografia");
-        grafo.prereq("Construccion", "Materiales de construccion");
-        grafo.prereq("Diseño estructural", "Analisis estructural");
-        grafo.prereq("Fundaciones", "Mecanica de suelos");
-        grafo.prereq("Hidraulica", "Mecanica de fluidos");
-        grafo.prereq("Ingenieria de transporte", "Diseño de vias");
-        grafo.prereq("Administracion y control de la construccion", "Construccion");
-        grafo.prereq("Acueducto y alcantarillado", "Hidraulica");
-        grafo.prereq("Proyecto final", "Ingenieria de transporte");
-        grafo.prereq("Proyecto final", "Acueducto y alcantarillado");
-        grafo.prereq("Proyecto final", "Administracion y control de la construccion");
-        grafo.prereq("Proyecto final", "Examen comprehensivo 2");
-        grafo.prereq("Proyecto final", "Ingles 8");
+        grafo.prereq("Examen comprehensivo 1", "Fisica electricidad");
+        grafo.prereq("Examen comprehensivo 1", "Fisica calor ondas");
+        grafo.prereq("Circuitos 2", "Circuitos 1");
+        grafo.prereq("Electronica 1", "Circuitos 1");
+        grafo.prereq("Sol. Comp. Prob. Ing", "Ecuaciones");
+        grafo.prereq("Sol. Comp. Prob. Ing", "Algoritmia 1");
+        grafo.prereq("Termodinamica 1", "Fisica calor ondas");
+        
+        //6
+        grafo.prereq("Logica Digital", "Circuitos 1");
+        grafo.prereq("Maquinas Electricas 1", "Circuitos 2");
+        grafo.prereq("Maquinas Electricas 1", "Teoria Electromagnetica");
+        grafo.prereq("Medicion e Instrum.", "Circuitos 2");
+        grafo.prereq("Medicion e Instrum.", "Electronica 1");
+        grafo.prereq("Señales y sistemas", "Examen comprehensivo 1");
+        grafo.prereq("Señales y sistemas", "Ecuaciones");
+        
+        //7
+        grafo.prereq("Maquinas Electricas 2", "Maquinas Electricas 1");
+        grafo.prereq("Maquinas Electricas 2", "Termodinamica 1");
+        grafo.prereq("Inst. Electricas", "Maquinas Electricas 1");
+        grafo.prereq("Elem. de Sis. de Pot.", "Maquinas Electricas 1");
+        grafo.prereq("Elem. de Sis. de Pot.", "Sol. Comp. Prob. Ing");
+        grafo.prereq("Elem. de Sis. de Pot.", "Señales y sistemas");
+        grafo.prereq("Control Automatico", "Señales y sistemas");
+        grafo.prereq("Control Automatico", "Medicion e Instrum.");
+        
+        //8
+        grafo.prereq("Anal. Sist. de Pot.", "Elem. de Sis. de Pot.");
+        
+        //10
+        grafo.prereq("Proyecto Final", "Examen comprehensivo 2");
+        grafo.prereq("Proyecto Final", "Anal. Sist. de Pot.");
+        grafo.prereq("Proyecto Final", "Ingles 8");
+        grafo.prereq("Proyecto Final", "Protec. Electricas");
+        grafo.prereq("Proyecto Final", "Subes. Electricas");
+        grafo.prereq("Proyecto Final", "Lin. y Red. de Trans.");
+        grafo.prereq("Proyecto Final", "Control Automatico");
     }
     
     private void agruparPorSemestre() {
         materiasPorSemestre.put(1, Arrays.asList(
-                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Algebra Lineal"),
                 grafo.getNodo("Calculo 1"),
                 grafo.getNodo("Expresion Grafica"),
                 grafo.getNodo("Intro Ingenieria Electrica"),
@@ -203,7 +224,7 @@ public class Electrica extends javax.swing.JFrame {
                 grafo.getNodo("Sol. Comp. Prob. Ing"),
                 grafo.getNodo("Termodinamica 1"),
                 grafo.getNodo("Electiva basica profesional"),
-                grafo.getNodo("Examen Comprehensivo 1"),
+                grafo.getNodo("Examen comprehensivo 1"),
                 grafo.getNodo("Ingles 5")
         ));
         
@@ -219,7 +240,7 @@ public class Electrica extends javax.swing.JFrame {
         materiasPorSemestre.put(7, Arrays.asList(
                 grafo.getNodo("Maquinas Electricas 2"),
                 grafo.getNodo("Inst. Electricas"),
-                grafo.getNodo("Elem. de Sis. y Prot."),
+                grafo.getNodo("Elem. de Sis. de Pot."),
                 grafo.getNodo("Control Automatico"),
                 grafo.getNodo("Filosofia"),
                 grafo.getNodo("Ingles 7")
@@ -235,7 +256,7 @@ public class Electrica extends javax.swing.JFrame {
         ));
 
         materiasPorSemestre.put(9, Arrays.asList(
-                grafo.getNodo("Examen Comprehensivo 2"),
+                grafo.getNodo("Examen comprehensivo 2"),
                 grafo.getNodo("Profesional 1"),
                 grafo.getNodo("Profesional 2"),
                 grafo.getNodo("Complem. Libre 1"),

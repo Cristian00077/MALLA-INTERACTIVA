@@ -111,14 +111,24 @@ public class Electronica extends javax.swing.JFrame {
         //CONECTAR LAS ARISTAS
         grafo.prereq("Calculo 2", "Calculo 1");
         grafo.prereq("Fisica mecanica", "Calculo 1");
-        grafo.prereq("Competencias 2", "Competencias 1");
-        grafo.prereq("Calculo 3", "Algebra lineal");
-        grafo.prereq("Calculo 3", "Calculo 2");
-        grafo.prereq("Fisica calor", "Calculo 1");
-        grafo.prereq("Fisica calor", "Fisica mecanica");
-        grafo.prereq("Estatica", "Fisica mecanica");
-        grafo.prereq("Topografia", "Expresion grafica");
+        grafo.prereq("Competencias comunicativas 2", "Competencias comunicativas 1");
+        
+        //3
         grafo.prereq("Ecuaciones", "Calculo 2");
+        grafo.prereq("Calculo 3", "Algebra Lineal");
+        grafo.prereq("Calculo 3", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Fisica mecanica");
+        
+        //4
+        grafo.prereq("Circuitos 1", "Algebra Lineal");
+        grafo.prereq("Circuitos 1", "Fisica electricidad");
+        grafo.prereq("Fisica calor ondas", "Calculo 1");
+        grafo.prereq("Fisica calor ondas", "Fisica mecanica");
+        grafo.prereq("Teoria Electromagnetica", "Fisica electricidad");
+        grafo.prereq("Teoria Electromagnetica", "Ecuaciones");
+        grafo.prereq("Analisis Datos Ing", "Calculo 2");
+        
         grafo.prereq("Ingles 2", "Ingles 1");
         grafo.prereq("Ingles 3", "Ingles 2");
         grafo.prereq("Ingles 4", "Ingles 3");
@@ -126,122 +136,133 @@ public class Electronica extends javax.swing.JFrame {
         grafo.prereq("Ingles 6", "Ingles 5");
         grafo.prereq("Ingles 7", "Ingles 6");
         grafo.prereq("Ingles 8", "Ingles 7");
-        grafo.prereq("Analisis de datos", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Fisica mecanica");
-        grafo.prereq("Mecanica de solidos", "Estatica");
-        grafo.prereq("Materiales de construccion", "Mecanica de solidos");
-        grafo.prereq("Soluciones computacionales", "Ecuaciones");
-        grafo.prereq("Soluciones computacionales", "Algoritmia 1");
-        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
+        
+        //5
         grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
         grafo.prereq("Examen comprehensivo 1", "Calculo 3");
         grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
-        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
-        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
-        grafo.prereq("Analisis estructural", "Mecanica de solidos");
-        grafo.prereq("Analisis estructural", "Examen comprehensivo 1");
-        grafo.prereq("Mecanica de suelos", "Mecanica de solidos");
-        grafo.prereq("Mecanica de suelos", "Geologia");
-        grafo.prereq("Mecanica de suelos", "Examen comprehensivo 1");
-        grafo.prereq("Hidrologia", "Analisis de datos");
-        grafo.prereq("Diseño de vias", "Topografia");
-        grafo.prereq("Construccion", "Materiales de construccion");
-        grafo.prereq("Diseño estructural", "Analisis estructural");
-        grafo.prereq("Fundaciones", "Mecanica de suelos");
-        grafo.prereq("Hidraulica", "Mecanica de fluidos");
-        grafo.prereq("Ingenieria de transporte", "Diseño de vias");
-        grafo.prereq("Administracion y control de la construccion", "Construccion");
-        grafo.prereq("Acueducto y alcantarillado", "Hidraulica");
-        grafo.prereq("Proyecto final", "Ingenieria de transporte");
-        grafo.prereq("Proyecto final", "Acueducto y alcantarillado");
-        grafo.prereq("Proyecto final", "Administracion y control de la construccion");
-        grafo.prereq("Proyecto final", "Examen comprehensivo 2");
-        grafo.prereq("Proyecto final", "Ingles 8");
+        grafo.prereq("Examen comprehensivo 1", "Fisica electricidad");
+        grafo.prereq("Examen comprehensivo 1", "Fisica calor ondas");
+        grafo.prereq("Circuitos 2", "Circuitos 1");
+        grafo.prereq("Electronica 1", "Circuitos 1");
+        grafo.prereq("Sol. Comp. Prob. Ing", "Ecuaciones");
+        grafo.prereq("Sol. Comp. Prob. Ing", "Algoritmia 1");
+        grafo.prereq("Termodinamica 1", "Fisica calor ondas");
+        
+        //6
+        grafo.prereq("Logica Digital", "Circuitos 1");
+        grafo.prereq("Maquinas Electricas 1", "Circuitos 2");
+        grafo.prereq("Maquinas Electricas 1", "Teoria Electromagnetica");
+        grafo.prereq("Medicion e Instrum.", "Circuitos 2");
+        grafo.prereq("Medicion e Instrum.", "Electronica 1");
+        grafo.prereq("Señales y sistemas", "Examen comprehensivo 1");
+        grafo.prereq("Señales y sistemas", "Ecuaciones");
+        
+        //7
+        grafo.prereq("Maquinas Electricas 2", "Maquinas Electricas 1");
+        grafo.prereq("Maquinas Electricas 2", "Termodinamica 1");
+        grafo.prereq("Inst. Electricas", "Maquinas Electricas 1");
+        grafo.prereq("Elem. de Sis. de Pot.", "Maquinas Electricas 1");
+        grafo.prereq("Elem. de Sis. de Pot.", "Sol. Comp. Prob. Ing");
+        grafo.prereq("Elem. de Sis. de Pot.", "Señales y sistemas");
+        grafo.prereq("Control Automatico", "Señales y sistemas");
+        grafo.prereq("Control Automatico", "Medicion e Instrum.");
+        
+        //8
+        grafo.prereq("Anal. Sist. de Pot.", "Elem. de Sis. de Pot.");
+        
+        //10
+        grafo.prereq("Proyecto Final", "Examen comprehensivo 2");
+        grafo.prereq("Proyecto Final", "Anal. Sist. de Pot.");
+        grafo.prereq("Proyecto Final", "Ingles 8");
+        grafo.prereq("Proyecto Final", "Protec. Electricas");
+        grafo.prereq("Proyecto Final", "Subes. Electricas");
+        grafo.prereq("Proyecto Final", "Lin. y Red. de Trans.");
+        grafo.prereq("Proyecto Final", "Control Automatico");
     }
     
     private void agruparPorSemestre() {
         materiasPorSemestre.put(1, Arrays.asList(
-                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Algebra Lineal"),
                 grafo.getNodo("Calculo 1"),
                 grafo.getNodo("Expresion Grafica"),
-                grafo.getNodo("Intro Ing. Electronica"),
-                grafo.getNodo("Comp. Comunicat. 1"),
+                grafo.getNodo("Intro Ingenieria Electrica"),
+                grafo.getNodo("Competencias comunicativas 1"),
                 grafo.getNodo("Ingles 1")
         ));
-        
+
         materiasPorSemestre.put(2, Arrays.asList(
                 grafo.getNodo("Calculo 2"),
                 grafo.getNodo("Fisica mecanica"),
-                grafo.getNodo("Algoritm. y Progr. 1"),
-                grafo.getNodo("Comp. Comunicat. 2"),
+                grafo.getNodo("Algoritmia 1"),
+                grafo.getNodo("Competencias comunicativas 2"),
                 grafo.getNodo("Ciencias de la Vida"),
                 grafo.getNodo("Ingles 2")
         ));
 
         materiasPorSemestre.put(3, Arrays.asList(
+                grafo.getNodo("Ecuaciones"),
                 grafo.getNodo("Calculo 3"),
-                grafo.getNodo("Ecuaci. Diferenciales"),
                 grafo.getNodo("Fisica electricidad"),
-                grafo.getNodo("Estudios del Caribe"),
-                grafo.getNodo("Ciencias Sociales"),
+                grafo.getNodo("Historia"),
+                grafo.getNodo("Sociales"),
                 grafo.getNodo("Ingles 3")
         ));
-        
+
         materiasPorSemestre.put(4, Arrays.asList(
-                grafo.getNodo("Teoria Electromag."),
-                grafo.getNodo("Fisica calor ondas"),
-                grafo.getNodo("Sol. Comp. Prob. Ing."),
                 grafo.getNodo("Circuitos 1"),
-                grafo.getNodo("Historia"),
+                grafo.getNodo("Fisica calor ondas"),
+                grafo.getNodo("Teoria Electromagnetica"),
+                grafo.getNodo("Analisis Datos Ing"),
+                grafo.getNodo("Estudios del Caribe"),
                 grafo.getNodo("Ingles 4"),
                 grafo.getNodo("Seminario de Carrera 1")
         ));
 
         materiasPorSemestre.put(5, Arrays.asList(
-                grafo.getNodo("Analisis Datos Ing."),
                 grafo.getNodo("Circuitos 2"),
                 grafo.getNodo("Electronica 1"),
-                grafo.getNodo("Basica Profesional"),
-                grafo.getNodo("Ex. Comprehensivo 1"),
+                grafo.getNodo("Sol. Comp. Prob. Ing"),
+                grafo.getNodo("Termodinamica 1"),
+                grafo.getNodo("Electiva basica profesional"),
+                grafo.getNodo("Examen comprehensivo 1"),
                 grafo.getNodo("Ingles 5")
         ));
         
         materiasPorSemestre.put(6, Arrays.asList(
-                grafo.getNodo("Medios de Transm."),
-                grafo.getNodo("Maquinas Electricas 1"),
                 grafo.getNodo("Logica Digital"),
-                grafo.getNodo("Electronica 2"),
-                grafo.getNodo("Señales y Sistemas"),
+                grafo.getNodo("Maquinas Electricas 1"),
+                grafo.getNodo("Medicion e Instrum."),
+                grafo.getNodo("Señales y sistemas"),
+                grafo.getNodo("Etica"),
                 grafo.getNodo("Ingles 6")
         ));
 
         materiasPorSemestre.put(7, Arrays.asList(
-                grafo.getNodo("Comunicaciones"),
-                grafo.getNodo("Medicion. e Instrum."),
-                grafo.getNodo("Electronica 3"),
-                grafo.getNodo("Microprocesadores"),
-                grafo.getNodo("Etica"),
+                grafo.getNodo("Maquinas Electricas 2"),
+                grafo.getNodo("Inst. Electricas"),
+                grafo.getNodo("Elem. de Sis. de Pot."),
+                grafo.getNodo("Control Automatico"),
+                grafo.getNodo("Filosofia"),
                 grafo.getNodo("Ingles 7")
         ));
         
         materiasPorSemestre.put(8, Arrays.asList(
-                grafo.getNodo("Telematica"),
-                grafo.getNodo("Control Automatico"),
-                grafo.getNodo("Diseño Electronico"),
-                grafo.getNodo("Microcontroladores"),
-                grafo.getNodo("Electiva gestion"),
+                grafo.getNodo("Protec. Electricas"),
+                grafo.getNodo("Anal. Sist. de Pot."),
+                grafo.getNodo("Subes. Electricas"),
+                grafo.getNodo("Lin. y Red. de Trans."),
+                grafo.getNodo("Gestion"),
                 grafo.getNodo("Ingles 8")
         ));
 
         materiasPorSemestre.put(9, Arrays.asList(
-                grafo.getNodo("Complem. Libre 1"),
+                grafo.getNodo("Examen comprehensivo 2"),
                 grafo.getNodo("Profesional 1"),
                 grafo.getNodo("Profesional 2"),
+                grafo.getNodo("Complem. Libre 1"),
                 grafo.getNodo("Innov. Desar. Socie."),
-                grafo.getNodo("Filosofia"),
-                grafo.getNodo("Seminario de Carrera 2"),
-                grafo.getNodo("Ex. Comprehensivo 2")
+                grafo.getNodo("Seminario de Carrera 2")
         ));
         
         materiasPorSemestre.put(10, Arrays.asList(
