@@ -25,156 +25,170 @@ public class Mecanica extends javax.swing.JFrame {
 
     private void armarGrafo() {
         // Semestre 1
-        grafo.registrar("Algebra Lineal", null, 3);
-        grafo.registrar("Calculo 1", null, 5);
-        grafo.registrar("Expresion Grafica", null, 3);
-        grafo.registrar("Introduccion a la Ing Mecanica", null, 1);
-        grafo.registrar("Competencias Comunicativas 1", null, 3);
-        grafo.registrar("Ingles 1", null, 0);
+        grafo.registrar("Algebra Lineal", algebra, 3);
+        grafo.registrar("Calculo 1", calculo1, 5);
+        grafo.registrar("Expresion Grafica", expresion, 3);
+        grafo.registrar("Introduccion a la Ing Mecanica", introduccion, 1);
+        grafo.registrar("Competencias Comunicativas 1", competencias1, 3);
+        grafo.registrar("Ingles 1", ingles1, 0);
 
         // Semestre 2
-        grafo.registrar("Calculo 2", null, 4);
-        grafo.registrar("Fisica Mecanica", null, 4);
-        grafo.registrar("Algoritmia y Programacion 1", null, 3);
-        grafo.registrar("Competencias Comunicativas 2", null, 3);
-        grafo.registrar("Ingles 2", null, 0);
+        grafo.registrar("Calculo 2", calculo2, 4);
+        grafo.registrar("Fisica Mecanica", fisicamecanica, 4);
+        grafo.registrar("Algoritmia y Programacion 1", algoritmia1, 3);
+        grafo.registrar("Competencias Comunicativas 2", competencias2, 3);
+        grafo.registrar("Ingles 2", ingles2, 0);
 
         // Semestre 3
-        grafo.registrar("Calculo 3", null, 4);
-        grafo.registrar("Ecuaciones Diferenciales", null, 3);
-        grafo.registrar("Fisica calor ondas", null, 4);
-        grafo.registrar("Ciencia de los Materiales", null, 3);
-        grafo.registrar("Estatica", null, 3);     
-        grafo.registrar("Ingles 3", null, 0);
+        grafo.registrar("Calculo 3", calculo3, 4);
+        grafo.registrar("Ecuaciones Diferenciales", ecuaciones, 3);
+        grafo.registrar("Fisica calor ondas", fisicacalor, 4);
+        grafo.registrar("Ciencia de los Materiales", cienciadelosmateriales, 3);
+        grafo.registrar("Estatica", estatica, 3);     
+        grafo.registrar("Ingles 3", ingles3, 0);
 
         // Semestre 4
-        grafo.registrar("Fisica electricidad", null, 4);
-        grafo.registrar("Termodinamica 1", null, 3);
-        grafo.registrar("Ingenieria de materiales", null, 2);
-        grafo.registrar("Dinamica", null, 3);
-        grafo.registrar("Mecanica de Solidos", null, 3);
-        grafo.registrar("Seminario de Carrera 1", null, 0);
-        grafo.registrar("Ingles 4", null, 0);
+        grafo.registrar("Fisica electricidad", fisicaelectrica, 4);
+        grafo.registrar("Termodinamica 1", termo1, 3);
+        grafo.registrar("Ingenieria de materiales", ingenieriamateriales, 2);
+        grafo.registrar("Dinamica", dinamica, 3);
+        grafo.registrar("Mecanica de Solidos", mecanicadesolidos, 3);
+        grafo.registrar("Seminario de Carrera 1", seminario1, 0);
+        grafo.registrar("Ingles 4", ingles4, 0);
 
         // Semestre 5
-        grafo.registrar("Termodinamica 2", null, 4);
-        grafo.registrar("Soln. Comput. de Problem. Ing.", null, 3);
-        grafo.registrar("Mecanica de Fluidos", null, 4);
-        grafo.registrar("Mecanica de Maquinas", null, 3);
-        grafo.registrar("Procesos de Fabricacion", null, 3);
-        grafo.registrar("Examen Comprehensivo 1", null, 0);
-        grafo.registrar("Ingles 5", null, 0);
+        grafo.registrar("Termodinamica 2", termo2, 4);
+        grafo.registrar("Soln. Comput. de Problem. Ing.", soluciones, 3);
+        grafo.registrar("Mecanica de Fluidos", mecanicadefluidos, 4);
+        grafo.registrar("Mecanica de Maquinas", mecanicamaquinas, 3);
+        grafo.registrar("Procesos de Fabricacion", procesosfabricacion, 3);
+        grafo.registrar("Examen Comprehensivo 1", examencom1, 0);
+        grafo.registrar("Ingles 5", ingles5, 0);
 
         // Semestre 6
-        grafo.registrar("Ingenieria Economica", null, 3);
-        grafo.registrar("Analisis de Datos en Ingenieria", null, 4);
-        grafo.registrar("Transferencia de Calor", null, 4);
-        grafo.registrar("Diseño Mecanico", null, 4);
-        grafo.registrar("Ingles 6", null, 0);
+        grafo.registrar("Ingenieria Economica", ingenieriaeconomica, 3);
+        grafo.registrar("Analisis de Datos en Ingenieria", analisisdatos, 4);
+        grafo.registrar("Transferencia de Calor", transferenciacalor, 4);
+        grafo.registrar("Diseño Mecanico", diseñomecanico, 4);
+        grafo.registrar("Ingles 6", ingles6, 0);
 
         // Semestre 7
-        grafo.registrar("Electiva Sistemas Electricos", null, 3);
-        grafo.registrar("Modelos de Sistemas Dinamicos", null, 3);
-        grafo.registrar("Diseño de Sistemas Termofluidos", null, 3);
-        grafo.registrar("Diseño de Sistemas Mecanicos", null, 3);
-        grafo.registrar("Electiva en Etica", null, 3);
-        grafo.registrar("Ingles 7", null, 0);
+        grafo.registrar("Electiva Sistemas Electricos", electivasistemaselectricos, 3);
+        grafo.registrar("Modelos de Sistemas Dinamicos", modelossistemasdinamicos, 3);
+        grafo.registrar("Diseño de Sistemas Termofluidos", diseñosistemastermofluidos, 3);
+        grafo.registrar("Diseño de Sistemas Mecanicos", diseñosistemasmecanicos, 3);
+        grafo.registrar("Electiva en Etica", eticaa, 3);
+        grafo.registrar("Ingles 7", ingles7, 0);
 
         // semestre 8
-        grafo.registrar("Electiva Ciencias de la vida", null, 3);
-        grafo.registrar("Proyecto de Investigacion", null, 2);
-        grafo.registrar("Instrumentacion y Control", null, 4);
-        grafo.registrar("Gestion de Activos", null, 2);
-        grafo.registrar("Electiva en Filosofia", null, 3);
-        grafo.registrar("Electiva Innov y Dllo Soc", null, 3);
-        grafo.registrar("Ingles 8", null, 0);
+        grafo.registrar("Electiva Ciencias de la vida", cienciasvida, 3);
+        grafo.registrar("Proyecto de Investigacion", proyectoinvestigacion, 2);
+        grafo.registrar("Instrumentacion y Control", instrumentacionycontrol, 4);
+        grafo.registrar("Gestion de Activos", gestionactivos, 2);
+        grafo.registrar("Electiva en Filosofia", filosofiaa, 3);
+        grafo.registrar("Electiva Innov y Dllo Soc", innovacion, 3);
+        grafo.registrar("Ingles 8", ingles8, 0);
 
         // Semestre 9
-        grafo.registrar("Electiva Form Compl Libre 1", null, 3);
-        grafo.registrar("Electiva en Energia", null, 3);
-        grafo.registrar("Electiva en Diseño y Materiales", null, 3);
-        grafo.registrar("Electiva en Humanidades", null, 3);
-        grafo.registrar("Electiva en Historia", null, 3);
-        grafo.registrar("Examen Comprehensivo 2", null, 0);
-        grafo.registrar("Seminario de Carrera 2", null, 0);
+        grafo.registrar("Electiva Form Compl Libre 1", complementaria1, 3);
+        grafo.registrar("Electiva en Energia", electivaenergia, 3);
+        grafo.registrar("Electiva en Diseño y Materiales", electivadiseñoymateriales, 3);
+        grafo.registrar("Electiva en Humanidades", humanidadess, 3);
+        grafo.registrar("Electiva en Historia", historia, 3);
+        grafo.registrar("Examen Comprehensivo 2", examencom2, 0);
+        grafo.registrar("Seminario de Carrera 2", seminario3, 0);
 
         // Semestre 10
-        grafo.registrar("Electiva Ing. Mecanica", null, 3);
-        grafo.registrar("Proyecto Final", null, 3);
-        grafo.registrar("El Form Compl Libre 2", null, 3);
-        grafo.registrar("Electiva ciencias sociales", null, 3);
-        grafo.registrar("Electiva Estudios del Caribe", null, 3);
+        grafo.registrar("Electiva Ing. Mecanica", electivaingenieriamecanica, 3);
+        grafo.registrar("Proyecto Final", proyectofinal, 3);
+        grafo.registrar("El Form Compl Libre 2", complementaria2, 3);
+        grafo.registrar("Electiva ciencias sociales", sociales, 3);
+        grafo.registrar("Electiva Estudios del Caribe", estudiosdelcaribe, 3);
     }
 
     private void definirAristas() {
         //CONECTAR LAS ARISTAS
-        /*grafo.prereq("Calculo 2", "Calculo 1");
-        grafo.prereq("Fisica mecanica", "Calculo 1");
-        grafo.prereq("Competencias 2", "Competencias 1");
+        grafo.prereq("Calculo 2", "Calculo 1");
+        grafo.prereq("Fisica Mecanica", "Calculo 1");
+        grafo.prereq("Competencias Comunicativas 2", "Competencias Comunicativas 1");
 
         grafo.prereq("Calculo 3", "Calculo 2");
-        grafo.prereq("Calculo 3", "Algebra lineal");
-        grafo.prereq("Fisica calor", "Calculo 1");
-        grafo.prereq("Fisica calor", "Fisica mecanica");
-        grafo.prereq("Estatica", "Fisica mecanica");
-        grafo.prereq("Ecuaciones", "Calculo 2");
+        grafo.prereq("Calculo 3", "Algebra Lineal");
+        grafo.prereq("Ecuaciones Diferenciales", "Calculo 2");
+        grafo.prereq("Fisica calor ondas", "Calculo 1");
+        grafo.prereq("Fisica calor ondas", "Fisica Mecanica");
+        grafo.prereq("Estatica", "Fisica Mecanica");
 
-        grafo.prereq("Fisica electrica", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Fisica mecanica");
+        grafo.prereq("Fisica electricidad", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Fisica Mecanica");
+        grafo.prereq("Termodinamica 1", "Fisica calor ondas");
+        grafo.prereq("Ingenieria de materiales", "Ciencia de los Materiales");
         grafo.prereq("Dinamica", "Calculo 2");
         grafo.prereq("Dinamica", "Estatica");
-        grafo.prereq("Termodinamica 1", "Fisica calor");
-        grafo.prereq("Ing Materiales", "CienciaMateriales");
         grafo.prereq("Mecanica de Solidos", "Estatica");
+        
+        grafo.prereq("Ingles 2", "Ingles 1");
+        grafo.prereq("Ingles 3", "Ingles 2");
+        grafo.prereq("Ingles 4", "Ingles 3");
+        grafo.prereq("Ingles 5", "Ingles 4");
+        grafo.prereq("Ingles 6", "Ingles 5");
+        grafo.prereq("Ingles 7", "Ingles 6");
+        grafo.prereq("Ingles 8", "Ingles 7");
+        
+        //5
+        grafo.prereq("Soln. Comput. de Problem. Ing.", "Algoritmia y Programacion 1");
+        grafo.prereq("Soln. Comput. de Problem. Ing.", "Ecuaciones Diferenciales");
+        grafo.prereq("Examen Comprehensivo 1", "Ecuaciones Diferenciales");
+        grafo.prereq("Examen Comprehensivo 1", "Calculo 3");
+        grafo.prereq("Examen Comprehensivo 1", "Fisica Mecanica");
+        grafo.prereq("Examen Comprehensivo 1", "Fisica calor ondas");
+        grafo.prereq("Examen Comprehensivo 1", "Fisica electricidad");
+        grafo.prereq("Termodinamica 2", "Termodinamica 1");
+        grafo.prereq("Mecanica de Fluidos", "Ecuaciones Diferenciales");
+        grafo.prereq("Mecanica de Maquinas", "Dinamica");
+        grafo.prereq("Procesos de Fabricacion", "Ciencia de los Materiales");
 
-        grafo.prereq("Solucion computacionales", "Algoritmia 1");
-        grafo.prereq("Solucion computacionales", "Ecuaciones");
-        grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
-        grafo.prereq("Examen comprehensivo 1", "Calculo 3");
-        grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
-        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
-        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
-        grafo.prereq("Termo2", "Termodinamica 1");
-        grafo.prereq("Procesos Fabricacion", "CienciaMateriales");
-        grafo.prereq("MecanicaMaquinas", "Dinamica");
-        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
+        //6
+        grafo.prereq("Analisis de Datos en Ingenieria", "Calculo 2");
+        grafo.prereq("Transferencia de Calor", "Examen Comprehensivo 1");
+        grafo.prereq("Transferencia de Calor", "Termodinamica 1");
+        grafo.prereq("Transferencia de Calor", "Mecanica de Fluidos");
+        grafo.prereq("Diseño Mecanico", "Examen Comprehensivo 1");
+        grafo.prereq("Diseño Mecanico", "Mecanica de Solidos");
+        grafo.prereq("Diseño Mecanico", "Mecanica de Maquinas");
 
-        grafo.prereq("Analisis Datos", "Calculo 2");
-        grafo.prereq("Transferencia de calor", "Termo2");
-        grafo.prereq("Transferencia de calor", "Mecanica de fluidos");
-        grafo.prereq("Transferencia de calor", "Examen comprehensivo 1");
-        grafo.prereq("DiseñoMec", "Mecanica de Solidos");
-        grafo.prereq("DiseñoMec", "MecanicaMaquinas");
-        grafo.prereq("DiseñoMec", "Examen comprehensivo 1");
+        //7
+        grafo.prereq("Electiva Sistemas Electricos", "Fisica electricidad");
+        grafo.prereq("Modelos de Sistemas Dinamicos", "Ecuaciones Diferenciales");
+        grafo.prereq("Modelos de Sistemas Dinamicos", "Fisica calor ondas");
+        grafo.prereq("Modelos de Sistemas Dinamicos", "Fisica electricidad");
+        grafo.prereq("Diseño de Sistemas Termofluidos", "Termodinamica 2");
+        grafo.prereq("Diseño de Sistemas Termofluidos", "Transferencia de Calor");
+        grafo.prereq("Diseño de Sistemas Mecanicos", "Diseño Mecanico");
 
-        grafo.prereq("Electiva de Sistemas Electricos", "Fisica electrica");
-        grafo.prereq("Modelo Sistemas Dinamicos", "Fisica electrica");
-        grafo.prereq("Modelo Sistemas Dinamicos", "Ecuaciones");
-        grafo.prereq("Modelo Sistemas Dinamicos", "Fisica calor");
-        grafo.prereq("Diseño Sistema Termo", "Transferencia de calor");
-        grafo.prereq("Diseño Sistema Termo", "Termo2");
-        grafo.prereq("Diseño Sistema Mecanico", "DiseñoMec");
+        //8
+        grafo.prereq("Proyecto de Investigacion", "Transferencia de Calor");
+        grafo.prereq("Proyecto de Investigacion", "Diseño Mecanico");
+        grafo.prereq("Instrumentacion y Control", "Modelos de Sistemas Dinamicos");
 
-        grafo.prereq("Instrumentacion Control", "Modelo Sistemas Dinamicos");
-        grafo.prereq("Proyecto de investigacion", "Transferencia de calor");
-        grafo.prereq("Proyecto de investigacion", "DiseñoMec");
+        //9
+        grafo.prereq("Electiva en Energia", "Transferencia de Calor");
+        grafo.prereq("Electiva en Diseño y Materiales", "Diseño Mecanico");
 
-        grafo.prereq("Electiva Energia", "Transferencia de calor");
-        grafo.prereq("Electiva Diseño Materiales", "DiseñoMec");
-
-        grafo.prereq("Electiva Mecanica", "DiseñoMec");
-        grafo.prereq("Electiva Mecanica", "Transferencia de calor");
-        grafo.prereq("Proyecto final", "Proyecto de investigacion");
-        grafo.prereq("Proyecto final", "DiseñoMec");
-        grafo.prereq("Proyecto final", "Diseño Sistema Termo");
-        grafo.prereq("Proyecto final", "Instrumentacion Control");
-        grafo.prereq("Proyecto final", "Ingles 8");*/
+        //10
+        grafo.prereq("Proyecto Final", "Proyecto de Investigacion");
+        grafo.prereq("Proyecto Final", "Diseño de Sistemas Mecanicos");
+        grafo.prereq("Proyecto Final", "Diseño de Sistemas Termofluidos");
+        grafo.prereq("Proyecto Final", "Instrumentacion y Control");
+        grafo.prereq("Proyecto Final", "Ingles 8");
+        grafo.prereq("Electiva Ing. Mecanica", "Transferencia de Calor");
+        grafo.prereq("Electiva Ing. Mecanica", "Diseño Mecanico");
         
     }
     
     private void agruparPorSemestre() {
         materiasPorSemestre.put(1, Arrays.asList(
-                grafo.getNodo("Algebra lineal"),
+                grafo.getNodo("Algebra Lineal"),
                 grafo.getNodo("Calculo 1"),
                 grafo.getNodo("Expresion Grafica"),
                 grafo.getNodo("Introduccion a la Ing Mecanica"),
@@ -381,7 +395,7 @@ public class Mecanica extends javax.swing.JFrame {
         mecanicadesolidos = new javax.swing.JButton();
         fisicaelectrica = new javax.swing.JButton();
         termo1 = new javax.swing.JButton();
-        cienciasbasicas = new javax.swing.JButton();
+        procesosfabricacion = new javax.swing.JButton();
         ingenieriamateriales = new javax.swing.JButton();
         examencom2 = new javax.swing.JButton();
         competencias2 = new javax.swing.JButton();
@@ -408,7 +422,7 @@ public class Mecanica extends javax.swing.JFrame {
         proyectofinal = new javax.swing.JButton();
         ingles3 = new javax.swing.JButton();
         ingles6 = new javax.swing.JButton();
-        formacioncomplementaria2 = new javax.swing.JButton();
+        complementaria2 = new javax.swing.JButton();
         transferenciacalor = new javax.swing.JButton();
         Isem = new javax.swing.JButton();
         IIsem = new javax.swing.JButton();
@@ -522,7 +536,7 @@ public class Mecanica extends javax.swing.JFrame {
 
         termo1.setText("Termodinamica 1");
 
-        cienciasbasicas.setText("Procesos de fabricacion");
+        procesosfabricacion.setText("Procesos de fabricacion");
 
         ingenieriamateriales.setText("Ingenieria de los materiales");
 
@@ -581,7 +595,7 @@ public class Mecanica extends javax.swing.JFrame {
 
         ingles6.setText("Ingles 6");
 
-        formacioncomplementaria2.setText("Electiva formacion complementaria 2");
+        complementaria2.setText("Electiva formacion complementaria 2");
 
         transferenciacalor.setText("Transferencia de calor");
 
@@ -617,160 +631,163 @@ public class Mecanica extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(Isem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(IIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(IIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(IVsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77)
-                .addComponent(Vsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(VIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80)
-                .addComponent(VIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addComponent(VIIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(81, 81, 81)
-                .addComponent(IXsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
-                .addComponent(Xsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(algebra, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(calculo2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(ecuaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(termo1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(cienciasbasicas, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(ingenieriaeconomica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(electivasistemaselectricos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(cienciasvida, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(humanidadess, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(electivaingenieriamecanica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(calculo1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(fisicamecanica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(calculo3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(mecanicadesolidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(mecanicamaquinas, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(analisisdatos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(modelossistemasdinamicos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(proyectoinvestigacion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(historia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(sociales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(introduccion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(algoritmia1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(fisicacalor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(fisicaelectrica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(termo2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(transferenciacalor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(diseñosistemastermofluidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(instrumentacionycontrol, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(complementaria1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(proyectofinal, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(expresion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(competencias2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(estatica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(dinamica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(soluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(diseñomecanico, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(diseñosistemasmecanicos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(gestionactivos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(electivaenergia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(formacioncomplementaria2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(competencias1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(ingles2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(cienciadelosmateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(ingenieriamateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(mecanicadefluidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(ingles6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(eticaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(filosofiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(electivadiseñoymateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(estudiosdelcaribe, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(ingles1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(188, 188, 188)
-                .addComponent(ingles3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(ingles4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(ingles5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(181, 181, 181)
-                .addComponent(ingles7, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(ingles8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(examencom2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(476, 476, 476)
-                .addComponent(seminario1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(examencom1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(327, 327, 327)
-                .addComponent(innovacion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(seminario3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(610, 610, 610)
-                .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(Isem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(IIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(IIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(IVsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(77, 77, 77)
+                        .addComponent(Vsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(VIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(VIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(VIIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(81, 81, 81)
+                        .addComponent(IXsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(67, 67, 67)
+                        .addComponent(Xsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(algebra, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(calculo2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(ecuaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(termo1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(procesosfabricacion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(ingenieriaeconomica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(electivasistemaselectricos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(cienciasvida, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(humanidadess, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(electivaingenieriamecanica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(calculo1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(fisicamecanica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(calculo3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(mecanicadesolidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(mecanicamaquinas, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(analisisdatos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(modelossistemasdinamicos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(proyectoinvestigacion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(historia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(sociales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(introduccion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(algoritmia1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(fisicacalor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(fisicaelectrica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(termo2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(transferenciacalor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(diseñosistemastermofluidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(instrumentacionycontrol, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(complementaria1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(proyectofinal, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(expresion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(competencias2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(estatica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(dinamica, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(soluciones, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(diseñomecanico, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(diseñosistemasmecanicos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(gestionactivos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(electivaenergia, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(complementaria2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(competencias1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(ingles2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(cienciadelosmateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(ingenieriamateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(mecanicadefluidos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(ingles6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(eticaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(filosofiaa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(electivadiseñoymateriales, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(estudiosdelcaribe, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(ingles1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(188, 188, 188)
+                        .addComponent(ingles3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(ingles4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(ingles5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(181, 181, 181)
+                        .addComponent(ingles7, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(ingles8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(examencom2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(476, 476, 476)
+                        .addComponent(seminario1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(examencom1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(327, 327, 327)
+                        .addComponent(innovacion, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(seminario3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(610, 610, 610)
+                        .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(60, 60, 60)
+                        .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -793,7 +810,7 @@ public class Mecanica extends javax.swing.JFrame {
                     .addComponent(calculo2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ecuaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(termo1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cienciasbasicas, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(procesosfabricacion, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ingenieriaeconomica, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(electivasistemaselectricos, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cienciasvida, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -841,7 +858,7 @@ public class Mecanica extends javax.swing.JFrame {
                             .addComponent(diseñosistemasmecanicos, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(gestionactivos, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(electivaenergia, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(formacioncomplementaria2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(complementaria2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -896,7 +913,8 @@ public class Mecanica extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(RegresarBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(limpiarbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
@@ -981,11 +999,11 @@ public class Mecanica extends javax.swing.JFrame {
     private javax.swing.JButton calculo2;
     private javax.swing.JButton calculo3;
     private javax.swing.JButton cienciadelosmateriales;
-    private javax.swing.JButton cienciasbasicas;
     private javax.swing.JButton cienciasvida;
     private javax.swing.JButton competencias1;
     private javax.swing.JButton competencias2;
     private javax.swing.JButton complementaria1;
+    private javax.swing.JButton complementaria2;
     private javax.swing.JButton dinamica;
     private javax.swing.JButton diseñomecanico;
     private javax.swing.JButton diseñosistemasmecanicos;
@@ -1005,7 +1023,6 @@ public class Mecanica extends javax.swing.JFrame {
     private javax.swing.JButton fisicacalor;
     private javax.swing.JButton fisicaelectrica;
     private javax.swing.JButton fisicamecanica;
-    private javax.swing.JButton formacioncomplementaria2;
     private javax.swing.JButton gestionactivos;
     private javax.swing.JButton historia;
     private javax.swing.JButton humanidadess;
@@ -1027,6 +1044,7 @@ public class Mecanica extends javax.swing.JFrame {
     private javax.swing.JButton mecanicadesolidos;
     private javax.swing.JButton mecanicamaquinas;
     private javax.swing.JButton modelossistemasdinamicos;
+    private javax.swing.JButton procesosfabricacion;
     private javax.swing.JButton proyectofinal;
     private javax.swing.JButton proyectoinvestigacion;
     private javax.swing.JButton seminario1;
