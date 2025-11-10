@@ -62,7 +62,7 @@ public class Industrial extends javax.swing.JFrame {
         grafo.registrar("Estudio del Trabajo", estudiotrabajo, 3);
         grafo.registrar("Sistemas de Costos de Produccion", sistemascostosproduccion, 3);
         grafo.registrar("Analisis de Datos en Ingenieria", analisisdatoss, 4);
-        grafo.registrar("Soluciones Computacionales", soluciones, 3);
+        grafo.registrar("Soluciones computacionales", soluciones, 3);
         grafo.registrar("Electiva Basica Profesional", basicaprofesionall, 3);
         grafo.registrar("Examen comprehensivo 1", examencom1, 0);
         grafo.registrar("Ingles 5", ingles5, 0);
@@ -111,14 +111,22 @@ public class Industrial extends javax.swing.JFrame {
         //CONECTAR LAS ARISTAS
         grafo.prereq("Calculo 2", "Calculo 1");
         grafo.prereq("Fisica mecanica", "Calculo 1");
-        grafo.prereq("Competencias 2", "Competencias 1");
+        grafo.prereq("Competencias comunicativas 2", "Competencias comunicativas 1");
+        
+        //3
         grafo.prereq("Calculo 3", "Algebra Lineal");
         grafo.prereq("Calculo 3", "Calculo 2");
-        grafo.prereq("Fisica calor", "Calculo 1");
-        grafo.prereq("Fisica calor", "Fisica mecanica");
+        //grafo.prereq("Fisica calor", "Calculo 1");
+        grafo.prereq("Fisica calor ondas", "Fisica mecanica");
         grafo.prereq("Estatica", "Fisica mecanica");
-        grafo.prereq("Topografia", "Expresion grafica");
+        
+        //4
         grafo.prereq("Ecuaciones", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Calculo 2");
+        grafo.prereq("Fisica electricidad", "Fisica mecanica");
+        grafo.prereq("Termodinamica 1", "Fisica calor ondas");
+        grafo.prereq("Procesos de Fabricacion", "Ciencia de los Materiales");
+        
         grafo.prereq("Ingles 2", "Ingles 1");
         grafo.prereq("Ingles 3", "Ingles 2");
         grafo.prereq("Ingles 4", "Ingles 3");
@@ -126,38 +134,53 @@ public class Industrial extends javax.swing.JFrame {
         grafo.prereq("Ingles 6", "Ingles 5");
         grafo.prereq("Ingles 7", "Ingles 6");
         grafo.prereq("Ingles 8", "Ingles 7");
-        grafo.prereq("Analisis de datos", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Calculo 2");
-        grafo.prereq("Fisica electrica", "Fisica mecanica");
-        grafo.prereq("Mecanica de solidos", "Estatica");
-        grafo.prereq("Materiales de construccion", "Mecanica de solidos");
+        
+        //5
+        grafo.prereq("Estudio del Trabajo", "Estrategia de Operaciones");
+        grafo.prereq("Estudio del Trabajo", "Procesos de Fabricacion");
+        grafo.prereq("Sistemas de Costos de Produccion", "Estrategia de Operaciones");
+        grafo.prereq("Analisis de Datos en Ingenieria", "Calculo 2");
         grafo.prereq("Soluciones computacionales", "Ecuaciones");
-        grafo.prereq("Soluciones computacionales", "Algoritmia 1");
-        grafo.prereq("Mecanica de fluidos", "Ecuaciones");
+        grafo.prereq("Soluciones computacionales", "Algoritmia y Programacion 1");
         grafo.prereq("Examen comprehensivo 1", "Ecuaciones");
         grafo.prereq("Examen comprehensivo 1", "Calculo 3");
-        grafo.prereq("Examen comprehensivo 1", "Fisica mecanica");
-        grafo.prereq("Examen comprehensivo 1", "Fisica calor");
-        grafo.prereq("Examen comprehensivo 1", "Fisica electrica");
-        grafo.prereq("Analisis estructural", "Mecanica de solidos");
-        grafo.prereq("Analisis estructural", "Examen comprehensivo 1");
-        grafo.prereq("Mecanica de suelos", "Mecanica de solidos");
-        grafo.prereq("Mecanica de suelos", "Geologia");
-        grafo.prereq("Mecanica de suelos", "Examen comprehensivo 1");
-        grafo.prereq("Hidrologia", "Analisis de datos");
-        grafo.prereq("Diseño de vias", "Topografia");
-        grafo.prereq("Construccion", "Materiales de construccion");
-        grafo.prereq("Diseño estructural", "Analisis estructural");
-        grafo.prereq("Fundaciones", "Mecanica de suelos");
-        grafo.prereq("Hidraulica", "Mecanica de fluidos");
-        grafo.prereq("Ingenieria de transporte", "Diseño de vias");
-        grafo.prereq("Administracion y control de la construccion", "Construccion");
-        grafo.prereq("Acueducto y alcantarillado", "Hidraulica");
-        grafo.prereq("Proyecto final", "Ingenieria de transporte");
-        grafo.prereq("Proyecto final", "Acueducto y alcantarillado");
-        grafo.prereq("Proyecto final", "Administracion y control de la construccion");
-        grafo.prereq("Proyecto final", "Examen comprehensivo 2");
-        grafo.prereq("Proyecto final", "Ingles 8");
+        grafo.prereq("Examen comprehensivo 1", "Algoritmia y Programacion 1");
+        grafo.prereq("Examen comprehensivo 1", "Fisica calor ondas");
+        grafo.prereq("Examen comprehensivo 1", "Fisica electricidad");
+        
+        //6
+        grafo.prereq("Diseño de Sistemas Productivos", "Estudio del Trabajo");
+        grafo.prereq("Diseño de Sistemas Productivos", "Examen comprehensivo 1");
+        grafo.prereq("Investigacion de Operaciones 1", "Algebra Lineal");
+        grafo.prereq("Investigacion de Operaciones 1", "Examen comprehensivo 1");
+        grafo.prereq("Analisis de Datos en Ingenieria 2", "Analisis de Datos en Ingenieria");
+        grafo.prereq("Ingenieria Economica", "Sistemas de Costos de Produccion");
+        
+        //7
+        grafo.prereq("Plan. Progr. Control produccion", "Diseño de Sistemas Productivos");
+        grafo.prereq("Investigacion de Operaciones 2", "Investigacion de Operaciones 1");
+        grafo.prereq("Investigacion de Operaciones 2", "Analisis de Datos en Ingenieria");
+        grafo.prereq("Control y Gestion integral Calidad", "Investigacion de Operaciones 1");
+        grafo.prereq("Control y Gestion integral Calidad", "Analisis de Datos en Ingenieria");
+        grafo.prereq("Analisis y Eval. de Proy. de Inv.", "Ingenieria Economica");
+        
+        //8
+        grafo.prereq("Logistica y Distribucion", "Plan. Progr. Control produccion");
+        grafo.prereq("Simulacion", "Investigacion de Operaciones 2");
+        grafo.prereq("Seguridad y Gestion Ambiental", "Estudio del Trabajo");
+        
+        //9
+        grafo.prereq("Electiva metodos cuantitativos", "Analisis de Datos en Ingenieria 2");
+        
+        //10
+        grafo.prereq("Proyecto Final", "Logistica y Distribucion");
+        grafo.prereq("Proyecto Final", "Simulacion");
+        grafo.prereq("Proyecto Final", "Seguridad y Gestion Ambiental");
+        grafo.prereq("Proyecto Final", "Analisis de Mod. de Gest. del Tal. Hum");
+        grafo.prereq("Proyecto Final", "Electiva Innovacion, Dllo y Soc");
+        grafo.prereq("Proyecto Final", "Ingles 8");
+        grafo.prereq("Proyecto Final", "Examen comprehensivo 2");
+        
     }
     
     private void agruparPorSemestre() {
@@ -166,10 +189,10 @@ public class Industrial extends javax.swing.JFrame {
                 grafo.getNodo("Calculo 1"),
                 grafo.getNodo("Expresion Grafica"),
                 grafo.getNodo("Introduccion a la Ing. Industrial"),
-                grafo.getNodo("Competencias Comunicativas 1"),
+                grafo.getNodo("Competencias comunicativas 1"),
                 grafo.getNodo("Ingles 1")
         ));
-
+        
         materiasPorSemestre.put(2, Arrays.asList(
                 grafo.getNodo("Calculo 2"),
                 grafo.getNodo("Fisica mecanica"),
@@ -202,12 +225,12 @@ public class Industrial extends javax.swing.JFrame {
                 grafo.getNodo("Estudio del Trabajo"),
                 grafo.getNodo("Sistemas de Costos de Produccion"),
                 grafo.getNodo("Analisis de Datos en Ingenieria"),
-                grafo.getNodo("Soluciones Computacionales"),
+                grafo.getNodo("Soluciones computacionales"),
                 grafo.getNodo("Electiva Basica Profesional"),
                 grafo.getNodo("Examen comprehensivo 1"),
                 grafo.getNodo("Ingles 5")
         ));
-
+        
         materiasPorSemestre.put(6, Arrays.asList(
                 grafo.getNodo("Diseño de Sistemas Productivos"),
                 grafo.getNodo("Investigacion de Operaciones 1"),
@@ -647,9 +670,9 @@ public class Industrial extends javax.swing.JFrame {
                                 .addComponent(IVsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(69, 69, 69)
                                 .addComponent(Vsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(65, 65, 65)
+                                .addGap(75, 75, 75)
                                 .addComponent(VIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(80, 80, 80)
+                                .addGap(70, 70, 70)
                                 .addComponent(VIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(65, 65, 65)
                                 .addComponent(VIIIsem, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -781,8 +804,9 @@ public class Industrial extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(Vsem)
                                 .addComponent(IVsem))
-                            .addComponent(VIsem)
-                            .addComponent(VIIsem)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(VIIsem)
+                                .addComponent(VIsem))
                             .addComponent(VIIIsem)
                             .addComponent(IXsem))
                         .addGap(12, 12, 12)

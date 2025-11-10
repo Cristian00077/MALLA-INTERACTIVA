@@ -200,9 +200,9 @@
                       <Component id="VIsem" min="-2" pref="74" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       <Component id="VIIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                       <Component id="VIIIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                       <Component id="IXsem" min="-2" pref="74" max="-2" attributes="0"/>
                       <EmptySpace pref="21" max="-2" attributes="0"/>
                   </Group>

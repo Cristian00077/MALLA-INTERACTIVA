@@ -28,21 +28,21 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="56" pref="56" max="-2" attributes="0"/>
                       <Component id="Isem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                       <Component id="IIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="80" pref="80" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                       <Component id="IIIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                       <Component id="IVsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="77" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                       <Component id="Vsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
                       <Component id="VIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="80" pref="80" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                       <Component id="VIIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
                       <Component id="VIIIsem" min="-2" pref="74" max="-2" attributes="0"/>
-                      <EmptySpace min="81" pref="81" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                       <Component id="IXsem" min="-2" pref="74" max="-2" attributes="0"/>
                       <EmptySpace min="67" pref="67" max="-2" attributes="0"/>
                       <Component id="Xsem" min="-2" pref="74" max="-2" attributes="0"/>
@@ -200,14 +200,22 @@
               <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Isem" min="-2" max="-2" attributes="0"/>
-                  <Component id="IIsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="IIIsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="IVsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="Vsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="VIsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="VIIsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="VIIIsem" min="-2" max="-2" attributes="0"/>
-                  <Component id="IXsem" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="IIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="IIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Vsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="IVsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="VIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="VIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="IXsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="VIIIsem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <Component id="Xsem" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
