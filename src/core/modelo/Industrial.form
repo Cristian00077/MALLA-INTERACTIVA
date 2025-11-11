@@ -144,23 +144,31 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="competencias1" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="cienciasvida" min="-2" pref="110" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="ingles2" min="-2" pref="110" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="expresion" min="-2" pref="110" max="-2" attributes="0"/>
+                                          <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                                          <Component id="competencias2" min="-2" pref="110" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="expresion" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                                      <Component id="competencias2" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                                       <Component id="estatica" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                                       <Component id="procesosfabricacion" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
                                       <Component id="soluciones" min="-2" pref="110" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="competencias1" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                                      <Component id="ingles2" min="-2" pref="110" max="-2" attributes="0"/>
-                                      <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
                                       <Component id="cienciadelosmateriales" min="-2" pref="110" max="-2" attributes="0"/>
                                       <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
                                       <Component id="estrategiaoperaciones" min="-2" pref="110" max="-2" attributes="0"/>
@@ -294,34 +302,35 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Component id="competencias1" min="-2" pref="55" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="ingles2" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                              <Component id="cienciadelosmateriales" min="-2" pref="55" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="cienciadelosmateriales" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="cienciasvida" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               <Component id="estrategiaoperaciones" min="-2" pref="55" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               <Component id="basicaprofesionall" min="-2" pref="55" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="eticaa" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
                                   <Component id="socialess" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="innovacion" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
                                   <Component id="examencom2" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
@@ -349,7 +358,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ingles3" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="ingles3" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                              <Component id="ingles2" alignment="3" min="-2" pref="55" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="ingles4" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Component id="ingles5" alignment="0" min="-2" pref="55" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -771,6 +783,11 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="socialessActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cienciasvida">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Electiva ciencias de la vida"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
